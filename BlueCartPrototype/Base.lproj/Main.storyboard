@@ -1,0 +1,1447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="wXv-wa-WaO">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Apercu-Bold.otf">
+            <string>Apercu-Bold</string>
+        </array>
+        <array key="Apercu-Light.otf">
+            <string>Apercu-Light</string>
+        </array>
+        <array key="Apercu.otf">
+            <string>Apercu</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BlueCartPrototype" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cea-1m-tBe"/>
+                        <viewControllerLayoutGuide type="bottom" id="6ic-YL-rnO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sn5-YM-ASc" userLabel="Search Bar">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TopDealsHamburgerMenuIcon" translatesAutoresizingMaskIntoConstraints="NO" id="sbS-Bd-0bN">
+                                        <rect key="frame" x="6" y="25" width="31" height="23"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="carticon" translatesAutoresizingMaskIntoConstraints="NO" id="TVp-Hv-lpb">
+                                        <rect key="frame" x="333" y="27" width="23" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <searchBar clipsSubviews="YES" contentMode="redraw" fixedFrame="YES" searchBarStyle="minimal" placeholder="Search everything" translatesAutoresizingMaskIntoConstraints="NO" id="gg9-Gf-T8Y">
+                                        <rect key="frame" x="46" y="16" width="282" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="barTintColor" red="0.20392156862745098" green="0.38431372549019605" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                        <textInputTraits key="textInputTraits" keyboardAppearance="light"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="3lV-MH-Lm1"/>
+                                        </connections>
+                                    </searchBar>
+                                </subviews>
+                                <color key="backgroundColor" red="0.17254901960784313" green="0.33333333333333331" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="equalSpacing" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="4Fr-pF-IKp" userLabel="Circle Menu">
+                                <rect key="frame" x="11" y="68" width="353" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="sjC-76-pVF" userLabel="All Products Stack">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="96"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WWt-sP-Eky">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="allproductsIcon" translatesAutoresizingMaskIntoConstraints="NO" id="a3D-wd-gjH">
+                                                        <rect key="frame" x="17" y="24" width="46" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="All Products" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUe-mj-Pq6">
+                                                <rect key="frame" x="0.0" y="80" width="80" height="16"/>
+                                                <fontDescription key="fontDescription" name="Apercu-Light" family="Apercu" pointSize="13"/>
+                                                <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="LSI-uG-vX7" userLabel="Order Guides Stack">
+                                        <rect key="frame" x="91" y="0.0" width="80" height="96"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yji-4p-oYy">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="orderguidesIcon" translatesAutoresizingMaskIntoConstraints="NO" id="5ew-dv-OBH">
+                                                        <rect key="frame" x="24" y="22" width="32" height="37"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Order Guides" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptq-mv-6xc">
+                                                <rect key="frame" x="0.0" y="80" width="80" height="16"/>
+                                                <fontDescription key="fontDescription" name="Apercu-Light" family="Apercu" pointSize="13"/>
+                                                <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="uIq-rF-YCE" userLabel="Favorites Stack">
+                                        <rect key="frame" x="182" y="0.0" width="80" height="96"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g1i-of-CeH">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="favoritesIcon" translatesAutoresizingMaskIntoConstraints="NO" id="ige-Af-Bzf">
+                                                        <rect key="frame" x="17" y="24" width="46" height="35"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Favorites" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeA-10-2Cd">
+                                                <rect key="frame" x="0.0" y="80" width="80" height="16"/>
+                                                <fontDescription key="fontDescription" name="Apercu-Light" family="Apercu" pointSize="13"/>
+                                                <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="oXx-bq-iDH" userLabel="My Deals Stack">
+                                        <rect key="frame" x="273" y="0.0" width="80" height="96"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DBl-2e-FDB">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="priceTagWhite" translatesAutoresizingMaskIntoConstraints="NO" id="7UU-Ix-Y8N">
+                                                        <rect key="frame" x="21" y="19" width="38" height="42"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BIb-Mj-w2r" userLabel="NotificationCircle">
+                                                        <rect key="frame" x="56" y="3" width="20" height="20"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXs-HN-5ks">
+                                                                <rect key="frame" x="0.0" y="-1" width="20" height="21"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.29803921570000003" green="0.79215686269999996" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <gestureRecognizers/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="My Deals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIl-Kl-dZ8">
+                                                <rect key="frame" x="0.0" y="80" width="80" height="16"/>
+                                                <fontDescription key="fontDescription" name="Apercu-Light" family="Apercu" pointSize="13"/>
+                                                <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="6" rowHeight="134" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P4n-Ix-pZc" userLabel="Products Table View">
+                                <rect key="frame" x="0.0" y="192" width="375" height="475"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductCellType1" rowHeight="134" id="gow-hc-ZIW" userLabel="Product Cell Type 1" customClass="Type1Cell" customModule="BlueCartPrototype" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="134"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gow-hc-ZIW" id="Enf-zp-vef">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="133.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fishDefaultCellPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="GPB-dj-CnG">
+                                                    <rect key="frame" x="3" y="5" width="82" height="62"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Supplier Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCp-AC-wY3">
+                                                    <rect key="frame" x="105" y="5" width="84" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Apercu-Light" family="Apercu" pointSize="13"/>
+                                                    <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Product Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53j-GA-qSU">
+                                                    <rect key="frame" x="105" y="29" width="106" height="19"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="16"/>
+                                                    <color key="textColor" red="0.14702966370558379" green="0.14702966370558379" blue="0.14702966370558379" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SKU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFm-Gn-Nvd">
+                                                    <rect key="frame" x="105" y="53" width="24" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Apercu-Light" family="Apercu" pointSize="14"/>
+                                                    <color key="textColor" red="0.47843137254901957" green="0.47843137254901957" blue="0.47843137254901957" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price per unit " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfN-5H-Fg7">
+                                                    <rect key="frame" x="105" y="75" width="101" height="19"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Apercu-Light" family="Apercu" pointSize="16"/>
+                                                    <color key="textColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Discounted Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOb-r0-dJU">
+                                                    <rect key="frame" x="211" y="75" width="127" height="19"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="16"/>
+                                                    <color key="textColor" red="1" green="0.055447048611111112" blue="0.097384982638888895" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="/Unit of Measure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0T-vM-5Qn">
+                                                    <rect key="frame" x="343" y="76" width="105" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Apercu-Light" family="Apercu" pointSize="14"/>
+                                                    <color key="textColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNa-P7-oG9">
+                                                    <rect key="frame" x="105" y="95" width="126" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.090196078431372548" green="0.52941176470588236" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Apercu" family="Apercu" pointSize="13"/>
+                                                    <state key="normal" title="Add to Cart"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="6"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="addToCartButtonTapped:" destination="gow-hc-ZIW" eventType="touchUpInside" id="PbT-pg-HEZ"/>
+                                                    </connections>
+                                                </button>
+                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZl-BI-gZ9" userLabel="Added To Cart">
+                                                    <rect key="frame" x="105" y="95" width="126" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.50196078430000002" green="0.81960784310000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="15"/>
+                                                    <state key="normal" title="Added (5)"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="6"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="addToCartButtonTapped:" destination="gow-hc-ZIW" eventType="touchUpInside" id="Ngq-qE-Y6i"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="SKUNumber" destination="hFm-Gn-Nvd" id="4kG-XF-4re"/>
+                                            <outlet property="addToCartButton" destination="GNa-P7-oG9" id="ptQ-FU-NAP"/>
+                                            <outlet property="addedButton" destination="QZl-BI-gZ9" id="Ozo-fS-vpW"/>
+                                            <outlet property="discountedPriceLabel" destination="nOb-r0-dJU" id="Y8G-pS-qAG"/>
+                                            <outlet property="pricePerUnitLabel" destination="xfN-5H-Fg7" id="u7C-dY-mvD"/>
+                                            <outlet property="productNameLabel" destination="53j-GA-qSU" id="hIy-7n-nzP"/>
+                                            <outlet property="supplierNameLabel" destination="qCp-AC-wY3" id="Kwh-ll-Uyy"/>
+                                            <outlet property="unitOfMeasureLabel" destination="C0T-vM-5Qn" id="NYB-Uv-Sqt"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductCellType2" rowHeight="141" id="OGS-ql-u9J" userLabel="Product Cell Type 2" customClass="Type2Cell" customModule="BlueCartPrototype" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="162" width="375" height="141"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OGS-ql-u9J" id="4Q6-NB-AYu">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="140.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mangoPicture" translatesAutoresizingMaskIntoConstraints="NO" id="fK8-4k-mQA">
+                                                    <rect key="frame" x="3" y="5" width="82" height="62"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Supplier Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9QG-eF-g6X">
+                                                    <rect key="frame" x="105" y="5" width="90.5" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Apercu-Light" family="Apercu" pointSize="14"/>
+                                                    <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Product Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KaE-iT-EVg">
+                                                    <rect key="frame" x="105" y="29" width="106" height="19"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="16"/>
+                                                    <color key="textColor" red="0.14702966370000001" green="0.14702966370000001" blue="0.14702966370000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SKU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHs-lv-nA4">
+                                                    <rect key="frame" x="105" y="52" width="22.5" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Apercu-Light" family="Apercu" pointSize="13"/>
+                                                    <color key="textColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price per unit " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swC-sw-uDr">
+                                                    <rect key="frame" x="105" y="73" width="101" height="19"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Apercu-Light" family="Apercu" pointSize="16"/>
+                                                    <color key="textColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Discounted Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEz-8T-pc1">
+                                                    <rect key="frame" x="211" y="73" width="127" height="19"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="16"/>
+                                                    <color key="textColor" red="1" green="0.055447048610000001" blue="0.097384982640000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="/Unit of Measure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBM-J7-Lze">
+                                                    <rect key="frame" x="343" y="74" width="105" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Apercu-Light" family="Apercu" pointSize="14"/>
+                                                    <color key="textColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tfl-fP-UTa">
+                                                    <rect key="frame" x="105" y="97" width="126" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="15"/>
+                                                    <color key="tintColor" red="0.0" green="0.51764705879999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" title="Choose Unit">
+                                                        <color key="titleColor" red="0.0" green="0.51764705879999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="6"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                            <integer key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="SKUNumber" destination="kHs-lv-nA4" id="13P-0w-SwT"/>
+                                            <outlet property="chooseUnitButton" destination="Tfl-fP-UTa" id="twh-D8-rZh"/>
+                                            <outlet property="discountedPriceLabel" destination="HEz-8T-pc1" id="xBG-cw-IUt"/>
+                                            <outlet property="pricePerUnitLabel" destination="swC-sw-uDr" id="cbs-8M-kiM"/>
+                                            <outlet property="productNameLabel" destination="KaE-iT-EVg" id="vU0-z0-LEz"/>
+                                            <outlet property="supplierNameLabel" destination="9QG-eF-g6X" id="FYA-vW-ynM"/>
+                                            <outlet property="unitOfMeasureLabel" destination="iBM-J7-Lze" id="jpC-1o-EIA"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="6aC-8O-66x"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0Hh-PZ-nHN"/>
+                    <connections>
+                        <outlet property="productTableView" destination="P4n-Ix-pZc" id="uSe-i2-pFI"/>
+                        <outlet property="searchDisplayController" destination="4HM-xl-dhV" id="Viz-3c-3eH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="4HM-xl-dhV">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="6Ue-Rm-waB"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="k1i-3L-y2a"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="LvZ-GD-iKO"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="57N-ys-M64"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="640.5" y="173.5"/>
+        </scene>
+        <!--Featured Product View Controller-->
+        <scene sceneID="ZKK-62-3sC">
+            <objects>
+                <viewController id="Zb2-uM-gc5" customClass="FeaturedProductViewController" customModule="BlueCartPrototype" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZZp-jc-zcd"/>
+                        <viewControllerLayoutGuide type="bottom" id="asw-tG-GsG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="S2f-fU-ZfX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stella" translatesAutoresizingMaskIntoConstraints="NO" id="Oy6-xt-Yl2">
+                                <rect key="frame" x="111" y="53" width="147" height="143"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-delete_sign" translatesAutoresizingMaskIntoConstraints="NO" id="0Nt-SA-L2Q">
+                                <rect key="frame" x="16" y="21" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Brewed since 1366. Stella Artois is an authentic, imported Belgian beer." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNT-do-VcH">
+                                <rect key="frame" x="41" y="257" width="293" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Apercu-Light" family="Apercu" pointSize="17"/>
+                                <color key="textColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVo-dI-hNs">
+                                <rect key="frame" x="41" y="322" width="293" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Apercu-Light" family="Apercu" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="4-Pack">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapFourPack:" destination="Zb2-uM-gc5" eventType="touchUpInside" id="jiG-qP-IQO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$10.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5F-Kg-8zU">
+                                <rect key="frame" x="260" y="336" width="52" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OuH-2N-UIM">
+                                <rect key="frame" x="41" y="382" width="293" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Apercu-Light" family="Apercu" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="12-Pack">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapTwelvePack:" destination="Zb2-uM-gc5" eventType="touchUpInside" id="OwM-UM-W8b"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$15.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Xb-aG-nKs">
+                                <rect key="frame" x="261" y="397.5" width="51" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zic-Dp-cYt">
+                                <rect key="frame" x="41" y="442" width="293" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Apercu-Light" family="Apercu" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="20-Pack">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapTwentyPack:" destination="Zb2-uM-gc5" eventType="touchUpInside" id="Kxm-DZ-6PW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$10.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Di-Tu-mMT">
+                                <rect key="frame" x="260" y="456" width="52" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4O-3j-6gE">
+                                <rect key="frame" x="41" y="502" width="293" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Apercu-Light" family="Apercu" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="24-Pack">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapTwentyFourPack:" destination="Zb2-uM-gc5" eventType="touchUpInside" id="Oth-8b-1f9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$26.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aH6-hT-1Px">
+                                <rect key="frame" x="261" y="518" width="60" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" fixedFrame="YES" text="Stella Artois Premium Belgian Blonde Lager" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fb-a0-n6z">
+                                <rect key="frame" x="41" y="197" width="293" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hw0-7k-ktU" userLabel="footerBar">
+                                <rect key="frame" x="0.0" y="576" width="375" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rrI-t9-KBZ" customClass="CustomStepper" customModule="BlueCartPrototype" customModuleProvider="target">
+                                        <rect key="frame" x="14" y="31" width="175" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="stepValue">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iR4-79-xDL">
+                                        <rect key="frame" x="213" y="31" width="148" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.51764705879999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="17"/>
+                                        <state key="normal" title="Add to Cart">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Featured Product" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Na8-Nr-1qR">
+                                <rect key="frame" x="94" y="25" width="187" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="FourPackButton" destination="EVo-dI-hNs" id="WDp-yC-kIa"/>
+                        <outlet property="TwelvePackButton" destination="OuH-2N-UIM" id="ku3-je-6Qg"/>
+                        <outlet property="TwentyFourPackButton" destination="T4O-3j-6gE" id="PsA-0O-MBS"/>
+                        <outlet property="TwentyPackButton" destination="zic-Dp-cYt" id="Sqy-3c-4op"/>
+                        <outlet property="footerBar" destination="hw0-7k-ktU" id="B6I-dX-dPA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yi6-Nu-RZi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1230.5" y="172.5"/>
+        </scene>
+        <!--Checkout View Controller-->
+        <scene sceneID="Xcc-VE-2gq">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="wXv-wa-WaO" customClass="CheckoutViewController" customModule="BlueCartPrototype" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bZk-KI-GLf"/>
+                        <viewControllerLayoutGuide type="bottom" id="BGf-aV-ziD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3oC-1f-vYZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="st3-Cg-15P">
+                                <rect key="frame" x="0.0" y="20" width="375" height="1800"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zK1-64-ArN">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-delete_sign-white" translatesAutoresizingMaskIntoConstraints="NO" id="mWf-02-omx">
+                                                <rect key="frame" x="15" y="15" width="25" height="25"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CHECKOUT " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0KD-cd-VTl">
+                                                <rect key="frame" x="103" y="10" width="168" height="28"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="-2"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.1764705882352941" green="0.3411764705882353" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="0Sj-k2-kXY"/>
+                                        </constraints>
+                                    </view>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="J3Q-k9-is3">
+                                        <rect key="frame" x="10" y="48" width="355" height="1853"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1853" id="Wbe-9g-lBU"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="30" id="E5U-b1-duU">
+                                            <size key="itemSize" width="335" height="270"/>
+                                            <size key="headerReferenceSize" width="50" height="50"/>
+                                            <size key="footerReferenceSize" width="360" height="50"/>
+                                            <inset key="sectionInset" minX="5" minY="0.0" maxX="5" maxY="10"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Type1CollectionViewCell" id="OkS-2n-Q9w" customClass="Type1CollectionViewCell" customModule="BlueCartPrototype" customModuleProvider="target">
+                                                <rect key="frame" x="10" y="50" width="335" height="275"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="275"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KIP-LV-rE7" userLabel="Individual">
+                                                            <rect key="frame" x="0.0" y="5" width="335" height="270"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distributor Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twO-Um-rBb">
+                                                                    <rect key="frame" x="8" y="8" width="213" height="21"/>
+                                                                    <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="19"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZNa-Tg-Q7y">
+                                                                    <rect key="frame" x="0.0" y="35" width="335" height="33"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery Days:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OaK-Xn-mYh">
+                                                                            <rect key="frame" x="8" y="6" width="114" height="22"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="114" id="WaH-b3-GCj"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="16"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M, Tu, W, Th, F, Sa, Su" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GiB-Tx-6nF">
+                                                                            <rect key="frame" x="123" y="6" width="170" height="22"/>
+                                                                            <fontDescription key="fontDescription" name="Apercu-Light" family="Apercu" pointSize="16"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstItem="OaK-Xn-mYh" firstAttribute="centerY" secondItem="ZNa-Tg-Q7y" secondAttribute="centerY" id="Dit-Nh-UPx"/>
+                                                                        <constraint firstItem="OaK-Xn-mYh" firstAttribute="firstBaseline" secondItem="GiB-Tx-6nF" secondAttribute="firstBaseline" id="MB3-aE-vHq"/>
+                                                                        <constraint firstItem="GiB-Tx-6nF" firstAttribute="leading" secondItem="OaK-Xn-mYh" secondAttribute="trailing" constant="1" id="OJt-T6-9Y9"/>
+                                                                        <constraint firstItem="OaK-Xn-mYh" firstAttribute="baseline" secondItem="GiB-Tx-6nF" secondAttribute="baseline" id="hy4-5x-Pfo"/>
+                                                                        <constraint firstItem="OaK-Xn-mYh" firstAttribute="top" secondItem="ZNa-Tg-Q7y" secondAttribute="top" constant="6" id="iiq-Vy-OCK"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="GiB-Tx-6nF" secondAttribute="trailing" constant="42" id="szk-if-kHJ"/>
+                                                                        <constraint firstItem="OaK-Xn-mYh" firstAttribute="leading" secondItem="ZNa-Tg-Q7y" secondAttribute="leadingMargin" id="zC6-bk-Enc"/>
+                                                                    </constraints>
+                                                                </view>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# of items" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wap-bt-d9k">
+                                                                    <rect key="frame" x="8" y="95.5" width="75.5" height="24"/>
+                                                                    <fontDescription key="fontDescription" name="Apercu" family="Apercu" pointSize="16"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSd-uz-ZXo">
+                                                                    <rect key="frame" x="258" y="93" width="42" height="30.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="42" id="Tx1-1A-5hV"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Apercu" family="Apercu" pointSize="14"/>
+                                                                    <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-sort_down_filled" translatesAutoresizingMaskIntoConstraints="NO" id="xOT-Xm-h7Q">
+                                                                    <rect key="frame" x="295" y="100.5" width="22" height="16"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="16" id="PwT-JP-Zcr"/>
+                                                                        <constraint firstAttribute="width" constant="22" id="pJY-8h-gZg"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UPB-c4-lq7" userLabel="divider view">
+                                                                    <rect key="frame" x="3" y="126.5" width="329" height="2"/>
+                                                                    <color key="backgroundColor" red="0.83529411764705885" green="0.83529411764705885" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="2" id="OY3-gS-bWZ"/>
+                                                                    </constraints>
+                                                                </view>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$25 Away From Order Minimum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnG-8e-6Is">
+                                                                    <rect key="frame" x="20" y="136.5" width="295" height="25"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="25" id="C6f-IZ-ElE"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="15"/>
+                                                                    <color key="textColor" red="0.80392156859999997" green="0.1019607843" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7E7-xk-vLH">
+                                                                    <rect key="frame" x="258" y="8" width="69" height="20.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="69" id="EOw-8f-3Vl"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="17"/>
+                                                                    <color key="textColor" red="0.81568627450980391" green="0.0039215686274509803" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Llw-0n-cs2">
+                                                                    <rect key="frame" x="20" y="168.5" width="295" height="28.5"/>
+                                                                    <subviews>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvX-mP-hB5">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="95" height="28.5"/>
+                                                                            <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="13"/>
+                                                                            <inset key="contentEdgeInsets" minX="6" minY="6" maxX="6" maxY="6"/>
+                                                                            <state key="normal" title="Delete">
+                                                                                <color key="titleColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </state>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                    <integer key="value" value="5"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                                                    <integer key="value" value="1"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </button>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRH-tb-OBE">
+                                                                            <rect key="frame" x="100" y="0.0" width="95" height="28.5"/>
+                                                                            <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="13"/>
+                                                                            <inset key="contentEdgeInsets" minX="6" minY="6" maxX="6" maxY="6"/>
+                                                                            <state key="normal" title="Add Note">
+                                                                                <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </state>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                    <integer key="value" value="5"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                                                    <integer key="value" value="1"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </button>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsd-gW-CuS">
+                                                                            <rect key="frame" x="200" y="0.0" width="95" height="28.5"/>
+                                                                            <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="13"/>
+                                                                            <inset key="contentEdgeInsets" minX="6" minY="6" maxX="6" maxY="6"/>
+                                                                            <state key="normal" title="Delivery Date">
+                                                                                <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </state>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                    <integer key="value" value="5"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                                                    <integer key="value" value="1"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </button>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="28.5" id="lD6-pN-swp"/>
+                                                                    </constraints>
+                                                                </stackView>
+                                                                <button opaque="NO" alpha="0.45000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4D-da-gSY">
+                                                                    <rect key="frame" x="20" y="213" width="295" height="37"/>
+                                                                    <color key="backgroundColor" red="0.42352941176470588" green="0.70588235294117641" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="37" id="bRJ-Om-QQV"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="15"/>
+                                                                    <state key="normal" title="Place Order">
+                                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    </state>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                            <integer key="value" value="5"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstItem="bSd-uz-ZXo" firstAttribute="centerY" secondItem="xOT-Xm-h7Q" secondAttribute="centerY" constant="-0.25" id="0O3-8k-OJe"/>
+                                                                <constraint firstItem="twO-Um-rBb" firstAttribute="top" secondItem="7E7-xk-vLH" secondAttribute="top" id="1XB-z6-Ghu"/>
+                                                                <constraint firstItem="Llw-0n-cs2" firstAttribute="top" secondItem="dnG-8e-6Is" secondAttribute="bottom" constant="7" id="1pq-fT-aYB"/>
+                                                                <constraint firstAttribute="trailing" secondItem="F4D-da-gSY" secondAttribute="trailing" constant="20" id="1sS-7k-Wtt"/>
+                                                                <constraint firstAttribute="bottom" secondItem="F4D-da-gSY" secondAttribute="bottom" constant="10" id="1tn-Yt-0wA"/>
+                                                                <constraint firstItem="ZNa-Tg-Q7y" firstAttribute="top" secondItem="twO-Um-rBb" secondAttribute="bottom" constant="6" id="2Dc-FN-OFf"/>
+                                                                <constraint firstAttribute="trailing" secondItem="xOT-Xm-h7Q" secondAttribute="trailing" constant="18" id="7ND-nn-1rO"/>
+                                                                <constraint firstItem="bSd-uz-ZXo" firstAttribute="top" secondItem="ZNa-Tg-Q7y" secondAttribute="bottom" constant="25" id="7xE-Jn-504"/>
+                                                                <constraint firstAttribute="trailing" secondItem="bSd-uz-ZXo" secondAttribute="trailing" constant="35" id="90R-Xv-8iS"/>
+                                                                <constraint firstItem="dnG-8e-6Is" firstAttribute="top" secondItem="UPB-c4-lq7" secondAttribute="bottom" constant="8" id="BAJ-b4-V9I"/>
+                                                                <constraint firstItem="dnG-8e-6Is" firstAttribute="leading" secondItem="Llw-0n-cs2" secondAttribute="leading" id="BYL-w9-5fm"/>
+                                                                <constraint firstItem="UPB-c4-lq7" firstAttribute="leading" secondItem="KIP-LV-rE7" secondAttribute="leading" constant="3" id="Jzb-N5-RDV"/>
+                                                                <constraint firstItem="bSd-uz-ZXo" firstAttribute="top" secondItem="KIP-LV-rE7" secondAttribute="top" constant="93" id="NBH-sd-DWr"/>
+                                                                <constraint firstItem="twO-Um-rBb" firstAttribute="top" secondItem="KIP-LV-rE7" secondAttribute="topMargin" id="NBT-2q-djo"/>
+                                                                <constraint firstItem="Wap-bt-d9k" firstAttribute="baseline" secondItem="bSd-uz-ZXo" secondAttribute="baseline" constant="-5" id="TSx-Gu-mzL"/>
+                                                                <constraint firstItem="UPB-c4-lq7" firstAttribute="centerX" secondItem="dnG-8e-6Is" secondAttribute="centerX" id="WzO-is-lOA"/>
+                                                                <constraint firstItem="twO-Um-rBb" firstAttribute="leading" secondItem="Wap-bt-d9k" secondAttribute="leading" id="ZKa-9r-nlK"/>
+                                                                <constraint firstItem="Wap-bt-d9k" firstAttribute="top" secondItem="xOT-Xm-h7Q" secondAttribute="top" constant="-5" id="ZWp-fZ-1C5"/>
+                                                                <constraint firstItem="ZNa-Tg-Q7y" firstAttribute="leading" secondItem="KIP-LV-rE7" secondAttribute="leading" id="h6M-Bd-Iik"/>
+                                                                <constraint firstAttribute="trailing" secondItem="ZNa-Tg-Q7y" secondAttribute="trailing" id="hhl-Mw-ScJ"/>
+                                                                <constraint firstItem="F4D-da-gSY" firstAttribute="top" secondItem="Llw-0n-cs2" secondAttribute="bottom" constant="16" id="iWh-uE-3FG"/>
+                                                                <constraint firstItem="dnG-8e-6Is" firstAttribute="leading" secondItem="KIP-LV-rE7" secondAttribute="leading" constant="20" id="nbz-dh-BIm"/>
+                                                                <constraint firstItem="F4D-da-gSY" firstAttribute="leading" secondItem="KIP-LV-rE7" secondAttribute="leading" constant="20" id="ohb-OD-YRO"/>
+                                                                <constraint firstAttribute="trailing" secondItem="7E7-xk-vLH" secondAttribute="trailing" constant="8" id="qEi-Hy-tzK"/>
+                                                                <constraint firstItem="Llw-0n-cs2" firstAttribute="width" secondItem="F4D-da-gSY" secondAttribute="width" id="qer-M2-irH"/>
+                                                                <constraint firstItem="Llw-0n-cs2" firstAttribute="leading" secondItem="F4D-da-gSY" secondAttribute="leading" id="rHQ-cx-ekQ"/>
+                                                                <constraint firstItem="UPB-c4-lq7" firstAttribute="top" secondItem="bSd-uz-ZXo" secondAttribute="bottom" constant="3" id="rna-8K-VXO"/>
+                                                                <constraint firstItem="twO-Um-rBb" firstAttribute="leading" secondItem="KIP-LV-rE7" secondAttribute="leadingMargin" id="seJ-lF-hxO"/>
+                                                                <constraint firstItem="twO-Um-rBb" firstAttribute="baseline" secondItem="7E7-xk-vLH" secondAttribute="firstBaseline" id="sqE-IT-lYo"/>
+                                                                <constraint firstItem="ZNa-Tg-Q7y" firstAttribute="centerX" secondItem="UPB-c4-lq7" secondAttribute="centerX" id="t6l-eY-v1A"/>
+                                                                <constraint firstItem="7E7-xk-vLH" firstAttribute="leading" secondItem="twO-Um-rBb" secondAttribute="trailing" constant="37" id="z06-tL-8Bi"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="6"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                    </subviews>
+                                                </view>
+                                                <constraints>
+                                                    <constraint firstItem="KIP-LV-rE7" firstAttribute="leading" secondItem="OkS-2n-Q9w" secondAttribute="leading" id="7Z3-aA-3j6"/>
+                                                    <constraint firstAttribute="bottomMargin" secondItem="KIP-LV-rE7" secondAttribute="bottom" constant="2" id="GB4-bX-SzM"/>
+                                                    <constraint firstItem="KIP-LV-rE7" firstAttribute="top" secondItem="OkS-2n-Q9w" secondAttribute="topMargin" constant="-3" id="Kmh-c5-fa5"/>
+                                                    <constraint firstAttribute="trailing" secondItem="KIP-LV-rE7" secondAttribute="trailing" id="UFd-DL-ti0"/>
+                                                </constraints>
+                                                <size key="customSize" width="335" height="275"/>
+                                                <connections>
+                                                    <outlet property="addNoteButton" destination="TRH-tb-OBE" id="OdE-tq-Opz"/>
+                                                    <outlet property="collectionViewCellView" destination="KIP-LV-rE7" id="Fz0-ed-vf2"/>
+                                                    <outlet property="deleteButton" destination="xvX-mP-hB5" id="uDx-He-L93"/>
+                                                    <outlet property="deliveryDateButton" destination="lsd-gW-CuS" id="EAP-LO-b9H"/>
+                                                    <outlet property="distributorNameLabel" destination="twO-Um-rBb" id="wAE-SR-AmV"/>
+                                                    <outlet property="numberOfItemsLabel" destination="Wap-bt-d9k" id="kac-A7-naK"/>
+                                                    <outlet property="orderMessage" destination="dnG-8e-6Is" id="v9h-iR-tnD"/>
+                                                    <outlet property="priceLabel" destination="7E7-xk-vLH" id="MIs-Ni-XN6"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Type2CollectionViewCell" id="izc-QL-Gpg" userLabel="Type2CollectionViewCell" customClass="Type2CollectionViewCell" customModule="BlueCartPrototype" customModuleProvider="target">
+                                                <rect key="frame" x="10" y="335" width="335" height="250"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="250"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="McS-rY-Ao6" userLabel="Individual">
+                                                            <rect key="frame" x="0.0" y="0.0" width="335" height="240"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distributor Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4W-7m-g2f">
+                                                                    <rect key="frame" x="8" y="9" width="213" height="21"/>
+                                                                    <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="19"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g86-tw-Tvx">
+                                                                    <rect key="frame" x="10" y="39" width="316" height="32"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery Days:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Skv-DC-kTT">
+                                                                            <rect key="frame" x="8" y="6" width="114" height="21"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="114" id="u5R-L2-TKb"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="16"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M, Tu, W, Th, F, Sa, Su" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gF6-y5-qhH">
+                                                                            <rect key="frame" x="123" y="7.5" width="151" height="19.5"/>
+                                                                            <fontDescription key="fontDescription" name="Apercu-Light" family="Apercu" pointSize="16"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstItem="Skv-DC-kTT" firstAttribute="baseline" secondItem="gF6-y5-qhH" secondAttribute="baseline" id="HD7-ot-Ype"/>
+                                                                        <constraint firstItem="Skv-DC-kTT" firstAttribute="centerY" secondItem="g86-tw-Tvx" secondAttribute="centerY" id="K1C-ii-UTF"/>
+                                                                        <constraint firstAttribute="height" constant="32" id="qUb-En-vev"/>
+                                                                        <constraint firstItem="Skv-DC-kTT" firstAttribute="top" secondItem="g86-tw-Tvx" secondAttribute="top" constant="6" id="vqy-pq-YPg"/>
+                                                                        <constraint firstItem="Skv-DC-kTT" firstAttribute="leading" secondItem="g86-tw-Tvx" secondAttribute="leadingMargin" id="zeB-hf-9eq"/>
+                                                                        <constraint firstItem="gF6-y5-qhH" firstAttribute="leading" secondItem="Skv-DC-kTT" secondAttribute="trailing" constant="1" id="zg0-zd-uLJ"/>
+                                                                    </constraints>
+                                                                </view>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# of items" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9En-Nd-v77">
+                                                                    <rect key="frame" x="8" y="88" width="75.5" height="35.5"/>
+                                                                    <fontDescription key="fontDescription" name="Apercu" family="Apercu" pointSize="16"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbK-ha-xS6">
+                                                                    <rect key="frame" x="258" y="79" width="42" height="52.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="42" id="eAU-LP-YNf"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Apercu" family="Apercu" pointSize="14"/>
+                                                                    <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-sort_down_filled" translatesAutoresizingMaskIntoConstraints="NO" id="cDU-sF-LWu">
+                                                                    <rect key="frame" x="295" y="97" width="22" height="16"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="22" id="LJ9-yQ-4aS"/>
+                                                                        <constraint firstAttribute="height" constant="16" id="X9m-SL-axr"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NbN-f8-nb5" userLabel="divider view">
+                                                                    <rect key="frame" x="3" y="125.5" width="329" height="2"/>
+                                                                    <color key="backgroundColor" red="0.83529411760000005" green="0.83529411760000005" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="2" id="lkp-di-emW"/>
+                                                                    </constraints>
+                                                                </view>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5TO-46-Nkf">
+                                                                    <rect key="frame" x="258" y="9" width="69" height="20.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="69" id="c7p-jN-5bE"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="17"/>
+                                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="K0i-tT-RiS">
+                                                                    <rect key="frame" x="20" y="149.5" width="295" height="28.5"/>
+                                                                    <subviews>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12w-dw-DBo">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="93" height="28.5"/>
+                                                                            <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="13"/>
+                                                                            <inset key="contentEdgeInsets" minX="6" minY="6" maxX="6" maxY="6"/>
+                                                                            <state key="normal" title="Delete">
+                                                                                <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </state>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                    <integer key="value" value="5"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                                                    <integer key="value" value="1"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </button>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eo-nz-RnS">
+                                                                            <rect key="frame" x="101" y="0.0" width="93" height="28.5"/>
+                                                                            <color key="backgroundColor" red="0.9882352941176471" green="0.90588235294117647" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="13"/>
+                                                                            <color key="tintColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <inset key="contentEdgeInsets" minX="6" minY="6" maxX="6" maxY="6"/>
+                                                                            <state key="normal" title="Edit Note">
+                                                                                <color key="titleColor" red="0.96078431372549022" green="0.65098039215686276" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </state>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                    <integer key="value" value="5"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                                                    <integer key="value" value="1"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </button>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ym2-jO-8Nz">
+                                                                            <rect key="frame" x="202" y="0.0" width="93" height="28.5"/>
+                                                                            <color key="backgroundColor" red="0.82745098039215681" green="0.84705882352941175" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="13"/>
+                                                                            <color key="tintColor" red="0.12549019610000001" green="0.2274509804" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <inset key="contentEdgeInsets" minX="6" minY="6" maxX="6" maxY="6"/>
+                                                                            <state key="normal" title="Delivery Date">
+                                                                                <color key="titleColor" red="0.12549019607843137" green="0.22745098039215686" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </state>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                    <integer key="value" value="5"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                                                    <integer key="value" value="1"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </button>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="28.5" id="95y-4I-SxB"/>
+                                                                    </constraints>
+                                                                </stackView>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYO-Tk-Gvb">
+                                                                    <rect key="frame" x="20" y="188" width="295" height="36"/>
+                                                                    <color key="backgroundColor" red="0.42352941176470588" green="0.70588235294117641" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="36" id="1Wx-NR-UaX"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="15"/>
+                                                                    <state key="normal" title="Place Order">
+                                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    </state>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                            <integer key="value" value="5"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="5TO-46-Nkf" secondAttribute="trailing" constant="8" id="6kK-Jn-phZ"/>
+                                                                <constraint firstItem="NbN-f8-nb5" firstAttribute="leading" secondItem="McS-rY-Ao6" secondAttribute="leading" constant="3" id="9Bx-ze-Zdi"/>
+                                                                <constraint firstItem="9En-Nd-v77" firstAttribute="baseline" secondItem="kbK-ha-xS6" secondAttribute="baseline" constant="-9" id="Dk9-9i-5Lx"/>
+                                                                <constraint firstItem="rYO-Tk-Gvb" firstAttribute="leading" secondItem="McS-rY-Ao6" secondAttribute="leading" constant="20" id="E61-Sk-d2t"/>
+                                                                <constraint firstItem="K0i-tT-RiS" firstAttribute="leading" secondItem="McS-rY-Ao6" secondAttribute="leading" constant="20" id="EZ2-Ay-UmA"/>
+                                                                <constraint firstItem="g86-tw-Tvx" firstAttribute="top" secondItem="Y4W-7m-g2f" secondAttribute="bottom" constant="9" id="GvZ-kY-a0o"/>
+                                                                <constraint firstItem="Y4W-7m-g2f" firstAttribute="leading" secondItem="McS-rY-Ao6" secondAttribute="leadingMargin" id="K95-iG-6Mt"/>
+                                                                <constraint firstAttribute="trailing" secondItem="rYO-Tk-Gvb" secondAttribute="trailing" constant="20" id="L6G-aO-aAt"/>
+                                                                <constraint firstItem="K0i-tT-RiS" firstAttribute="centerX" secondItem="McS-rY-Ao6" secondAttribute="centerX" id="LTg-oO-SF0"/>
+                                                                <constraint firstItem="kbK-ha-xS6" firstAttribute="centerY" secondItem="cDU-sF-LWu" secondAttribute="centerY" constant="0.5" id="LZf-wy-Bm8"/>
+                                                                <constraint firstItem="NbN-f8-nb5" firstAttribute="top" secondItem="9En-Nd-v77" secondAttribute="bottom" constant="2" id="LbT-qK-E6D"/>
+                                                                <constraint firstItem="Y4W-7m-g2f" firstAttribute="top" secondItem="McS-rY-Ao6" secondAttribute="top" constant="9" id="U0p-Yx-Czv"/>
+                                                                <constraint firstAttribute="bottom" secondItem="rYO-Tk-Gvb" secondAttribute="bottom" constant="16" id="WjM-ME-0wQ"/>
+                                                                <constraint firstAttribute="trailing" secondItem="K0i-tT-RiS" secondAttribute="trailing" constant="20" id="Y73-QT-0E3"/>
+                                                                <constraint firstItem="Y4W-7m-g2f" firstAttribute="leading" secondItem="9En-Nd-v77" secondAttribute="leading" id="Yaf-0P-Gcp"/>
+                                                                <constraint firstItem="g86-tw-Tvx" firstAttribute="leading" secondItem="McS-rY-Ao6" secondAttribute="leading" constant="10" id="Z2f-RV-Jlp"/>
+                                                                <constraint firstItem="K0i-tT-RiS" firstAttribute="width" secondItem="rYO-Tk-Gvb" secondAttribute="width" id="b01-Wh-NAI"/>
+                                                                <constraint firstItem="kbK-ha-xS6" firstAttribute="top" secondItem="g86-tw-Tvx" secondAttribute="bottom" constant="8" id="dIs-FU-Eci"/>
+                                                                <constraint firstAttribute="trailing" secondItem="kbK-ha-xS6" secondAttribute="trailing" constant="35" id="dx7-W6-VWb"/>
+                                                                <constraint firstItem="Y4W-7m-g2f" firstAttribute="top" secondItem="5TO-46-Nkf" secondAttribute="top" id="ecv-Z1-ai0"/>
+                                                                <constraint firstItem="K0i-tT-RiS" firstAttribute="top" secondItem="NbN-f8-nb5" secondAttribute="bottom" constant="22" id="h15-lg-5b1"/>
+                                                                <constraint firstItem="rYO-Tk-Gvb" firstAttribute="top" secondItem="K0i-tT-RiS" secondAttribute="bottom" constant="10" id="iBs-MD-M1C"/>
+                                                                <constraint firstItem="Y4W-7m-g2f" firstAttribute="baseline" secondItem="5TO-46-Nkf" secondAttribute="firstBaseline" id="jZd-CC-VqQ"/>
+                                                                <constraint firstItem="5TO-46-Nkf" firstAttribute="leading" secondItem="Y4W-7m-g2f" secondAttribute="trailing" constant="37" id="kGi-Xh-6TM"/>
+                                                                <constraint firstItem="g86-tw-Tvx" firstAttribute="centerX" secondItem="McS-rY-Ao6" secondAttribute="centerX" id="m0r-Ih-fld"/>
+                                                                <constraint firstAttribute="trailing" secondItem="cDU-sF-LWu" secondAttribute="trailing" constant="18" id="n00-et-dbQ"/>
+                                                                <constraint firstItem="g86-tw-Tvx" firstAttribute="centerX" secondItem="NbN-f8-nb5" secondAttribute="centerX" id="nn0-6y-wfw"/>
+                                                                <constraint firstItem="9En-Nd-v77" firstAttribute="top" secondItem="cDU-sF-LWu" secondAttribute="top" constant="-9" id="o48-pU-XAa"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="6"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                    </subviews>
+                                                </view>
+                                                <constraints>
+                                                    <constraint firstItem="McS-rY-Ao6" firstAttribute="top" secondItem="izc-QL-Gpg" secondAttribute="top" id="7RY-ht-zXv"/>
+                                                    <constraint firstAttribute="trailing" secondItem="McS-rY-Ao6" secondAttribute="trailing" id="Bbw-wX-CtG"/>
+                                                    <constraint firstItem="McS-rY-Ao6" firstAttribute="centerX" secondItem="izc-QL-Gpg" secondAttribute="centerX" id="LX7-mv-TMK"/>
+                                                    <constraint firstAttribute="bottomMargin" secondItem="McS-rY-Ao6" secondAttribute="bottom" constant="2" id="OWu-I1-xkn"/>
+                                                    <constraint firstItem="McS-rY-Ao6" firstAttribute="leading" secondItem="izc-QL-Gpg" secondAttribute="leading" id="kn0-B2-NLq"/>
+                                                </constraints>
+                                                <size key="customSize" width="335" height="250"/>
+                                                <connections>
+                                                    <outlet property="collectionViewCellView" destination="McS-rY-Ao6" id="yIp-Yr-4Hi"/>
+                                                    <outlet property="deleteButton" destination="12w-dw-DBo" id="E3g-KG-HGc"/>
+                                                    <outlet property="deliveryDateButton" destination="ym2-jO-8Nz" id="V8n-vJ-Bet"/>
+                                                    <outlet property="distributorLabel" destination="Y4W-7m-g2f" id="Wzz-x8-d59"/>
+                                                    <outlet property="editNoteButton" destination="6eo-nz-RnS" id="r8S-jx-b23"/>
+                                                    <outlet property="numberOfItemsLabel" destination="9En-Nd-v77" id="wI7-5A-UOZ"/>
+                                                    <outlet property="priceLabel" destination="5TO-46-Nkf" id="tyZ-2A-XP6"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="checkoutOrderStatus" id="oD8-Ox-HKe" userLabel="ReadyToGoHeader" customClass="CheckoutHeader" customModule="BlueCartPrototype" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="355" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- READY TO GO -" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGe-GT-bue">
+                                                    <rect key="frame" x="0.0" y="-516" width="355" height="1082"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1082" id="Rrz-BS-bnq"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="JGe-GT-bue" firstAttribute="centerY" secondItem="oD8-Ox-HKe" secondAttribute="centerY" id="Qzu-YJ-58p"/>
+                                                <constraint firstAttribute="trailing" secondItem="JGe-GT-bue" secondAttribute="trailing" id="Sev-uJ-3y5"/>
+                                                <constraint firstItem="JGe-GT-bue" firstAttribute="leading" secondItem="oD8-Ox-HKe" secondAttribute="leading" id="h9H-CC-4m4"/>
+                                            </constraints>
+                                            <connections>
+                                                <outlet property="checkoutHeaderLabel" destination="JGe-GT-bue" id="1vR-vK-ecW"/>
+                                            </connections>
+                                        </collectionReusableView>
+                                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="placeAllOrdersFooter" id="jXP-8g-SJz" userLabel="FooterPlaceAllOrdersButton" customClass="CheckoutCollectionReusableView" customModule="BlueCartPrototype" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="595" width="355" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2X2-9p-F04">
+                                                    <rect key="frame" x="0.0" y="0.0" width="355" height="50"/>
+                                                    <color key="backgroundColor" red="0.50196078430000002" green="0.81960784310000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="19"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <inset key="contentEdgeInsets" minX="35" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <state key="normal" title="Place All My Orders">
+                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                </button>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hCA-Ng-6vU">
+                                                    <rect key="frame" x="219" y="4" width="130" height="42"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3q3-kp-Nxg">
+                                                            <rect key="frame" x="8" y="8" width="114" height="26"/>
+                                                            <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="19"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.38823529411764707" green="0.63529411764705879" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="3q3-kp-Nxg" firstAttribute="top" secondItem="hCA-Ng-6vU" secondAttribute="topMargin" id="8Q7-fm-los"/>
+                                                        <constraint firstItem="3q3-kp-Nxg" firstAttribute="bottom" secondItem="hCA-Ng-6vU" secondAttribute="bottomMargin" id="IJV-Mb-bPC"/>
+                                                        <constraint firstItem="3q3-kp-Nxg" firstAttribute="trailing" secondItem="hCA-Ng-6vU" secondAttribute="trailingMargin" id="Yns-GN-hXD"/>
+                                                        <constraint firstItem="3q3-kp-Nxg" firstAttribute="leading" secondItem="hCA-Ng-6vU" secondAttribute="leadingMargin" id="ZfY-E5-mQ1"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="2X2-9p-F04" firstAttribute="top" secondItem="jXP-8g-SJz" secondAttribute="top" id="0zg-xy-OV5"/>
+                                                <constraint firstAttribute="bottom" secondItem="2X2-9p-F04" secondAttribute="bottom" id="5UH-l8-TTl"/>
+                                                <constraint firstItem="2X2-9p-F04" firstAttribute="centerY" secondItem="hCA-Ng-6vU" secondAttribute="centerY" id="OjQ-0p-QNL"/>
+                                                <constraint firstItem="hCA-Ng-6vU" firstAttribute="top" secondItem="jXP-8g-SJz" secondAttribute="topMargin" constant="-4" id="USS-JX-RAr"/>
+                                                <constraint firstAttribute="trailing" secondItem="2X2-9p-F04" secondAttribute="trailing" id="WGH-TK-WiR"/>
+                                                <constraint firstItem="2X2-9p-F04" firstAttribute="leading" secondItem="jXP-8g-SJz" secondAttribute="leading" id="d4j-Fd-UzW"/>
+                                                <constraint firstItem="hCA-Ng-6vU" firstAttribute="leading" secondItem="jXP-8g-SJz" secondAttribute="leading" constant="219" id="rOi-Yg-3v9"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="hCA-Ng-6vU" secondAttribute="trailing" constant="-2" id="use-wM-Tj1"/>
+                                            </constraints>
+                                        </collectionReusableView>
+                                        <connections>
+                                            <outlet property="dataSource" destination="wXv-wa-WaO" id="JDt-a4-Dcj"/>
+                                            <outlet property="delegate" destination="wXv-wa-WaO" id="yBv-T0-rdT"/>
+                                        </connections>
+                                    </collectionView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="J3Q-k9-is3" secondAttribute="bottom" constant="-101" id="2bI-nG-lS5"/>
+                                    <constraint firstItem="zK1-64-ArN" firstAttribute="centerX" secondItem="J3Q-k9-is3" secondAttribute="centerX" id="6mZ-rd-mfT"/>
+                                    <constraint firstItem="J3Q-k9-is3" firstAttribute="top" secondItem="zK1-64-ArN" secondAttribute="bottom" id="8Hk-nT-aWL"/>
+                                    <constraint firstItem="J3Q-k9-is3" firstAttribute="leading" secondItem="st3-Cg-15P" secondAttribute="leading" constant="10" id="GEX-Yf-Yat"/>
+                                    <constraint firstItem="zK1-64-ArN" firstAttribute="top" secondItem="st3-Cg-15P" secondAttribute="top" id="ckt-Am-9ma"/>
+                                    <constraint firstItem="zK1-64-ArN" firstAttribute="leading" secondItem="st3-Cg-15P" secondAttribute="leading" id="db4-8S-K1j"/>
+                                    <constraint firstItem="zK1-64-ArN" firstAttribute="centerX" secondItem="st3-Cg-15P" secondAttribute="centerX" id="jQs-xr-Xow"/>
+                                    <constraint firstAttribute="trailing" secondItem="zK1-64-ArN" secondAttribute="trailing" id="lUw-fm-prU"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="375" height="1900"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="rect" keyPath="frame">
+                                        <rect key="value" x="0.0" y="0.0" width="375" height="1200"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="st3-Cg-15P" firstAttribute="leading" secondItem="3oC-1f-vYZ" secondAttribute="leading" id="H6d-Ir-nRP"/>
+                            <constraint firstItem="st3-Cg-15P" firstAttribute="top" secondItem="bZk-KI-GLf" secondAttribute="bottom" id="X54-fv-Bdb"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="st3-Cg-15P" secondAttribute="bottom" constant="-20" id="bTf-Lf-0NC"/>
+                            <constraint firstAttribute="trailing" secondItem="st3-Cg-15P" secondAttribute="trailing" id="rY9-FZ-dze"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="1800"/>
+                    <connections>
+                        <outlet property="scrollView" destination="st3-Cg-15P" id="ZTl-eb-6XM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hEX-DK-v8c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1823.5" y="342"/>
+        </scene>
+        <!--Featured Product View Controller-->
+        <scene sceneID="Ile-IU-0Qm">
+            <objects>
+                <viewController id="5Lp-6z-zjB" customClass="FeaturedProductViewController" customModule="BlueCartPrototype" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kfC-vW-xRw"/>
+                        <viewControllerLayoutGuide type="bottom" id="24l-Gd-1H1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aBH-Kw-w15">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sofieBeerImage" translatesAutoresizingMaskIntoConstraints="NO" id="bvc-fO-Rgl">
+                                <rect key="frame" x="132" y="54" width="110" height="143"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-delete_sign" translatesAutoresizingMaskIntoConstraints="NO" id="Aux-hI-DTL">
+                                <rect key="frame" x="16" y="21" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Featured Product" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Caw-LX-xM5">
+                                <rect key="frame" x="99" y="25" width="182" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tart, dry, sparkling ale with spicy white pepper notes, a hint of orange peel and a creamy white finish." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GjN-Vi-x9k">
+                                <rect key="frame" x="41" y="257" width="293" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Apercu-Light" family="Apercu" pointSize="12.5"/>
+                                <color key="textColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfL-WH-5yh">
+                                <rect key="frame" x="41" y="322" width="293" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Apercu-Light" family="Apercu" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="4-Pack">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapFourPack:" destination="5Lp-6z-zjB" eventType="touchUpInside" id="QbW-xh-SH8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$10.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PkT-Bo-fdn">
+                                <rect key="frame" x="267" y="336" width="52" height="23.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYY-Sv-8U4">
+                                <rect key="frame" x="41" y="382" width="293" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Apercu-Light" family="Apercu" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="765 mL">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapTwelvePack:" destination="5Lp-6z-zjB" eventType="touchUpInside" id="Sp6-Bh-zqd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$8.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqR-Mh-7RY">
+                                <rect key="frame" x="267" y="396.5" width="44" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ZZ-yM-HDg">
+                                <rect key="frame" x="41" y="442" width="293" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Apercu-Light" family="Apercu" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="1/6 bbl">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapTwentyPack:" destination="5Lp-6z-zjB" eventType="touchUpInside" id="3BB-1p-Wga"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$118.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJW-VG-SFM">
+                                <rect key="frame" x="265.5" y="456" width="59.5" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4l-VL-fTx">
+                                <rect key="frame" x="41" y="502" width="293" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Apercu-Light" family="Apercu" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="1/2 bbl">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapTwentyFourPack:" destination="5Lp-6z-zjB" eventType="touchUpInside" id="JB4-3q-84v"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" fixedFrame="YES" text="Sofie Belgian Style Farmhouse Ale 765ml" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9f-4t-Awl">
+                                <rect key="frame" x="41" y="197" width="293" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5pG-Wf-PgI" userLabel="footerBar">
+                                <rect key="frame" x="0.0" y="576" width="375" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Mv-Tc-SZV" customClass="CustomStepper" customModule="BlueCartPrototype" customModuleProvider="target">
+                                        <rect key="frame" x="14" y="31" width="175" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="stepValue">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Me-ub-TdP">
+                                        <rect key="frame" x="213" y="31" width="148" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.50196078430000002" green="0.81960784310000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="17"/>
+                                        <state key="normal" title="Added">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$225.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kds-qg-ZlD">
+                                <rect key="frame" x="266.5" y="516.5" width="63.5" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="FourPackButton" destination="yfL-WH-5yh" id="fCK-LE-bbx"/>
+                        <outlet property="TwelvePackButton" destination="GYY-Sv-8U4" id="Lyx-c1-nts"/>
+                        <outlet property="TwentyFourPackButton" destination="J4l-VL-fTx" id="scB-nW-Qbs"/>
+                        <outlet property="TwentyPackButton" destination="1ZZ-yM-HDg" id="pAz-ai-AWI"/>
+                        <outlet property="footerBar" destination="5pG-Wf-PgI" id="Zjn-4P-YeC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iUh-Ec-EbQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="640.5" y="1076.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TopDealsHamburgerMenuIcon" width="97" height="75"/>
+        <image name="allproductsIcon" width="117" height="76"/>
+        <image name="carticon" width="91" height="85"/>
+        <image name="favoritesIcon" width="124" height="101"/>
+        <image name="fishDefaultCellPhoto" width="241" height="156"/>
+        <image name="icons8-delete_sign" width="64" height="64"/>
+        <image name="icons8-delete_sign-white" width="64" height="64"/>
+        <image name="icons8-sort_down_filled" width="75" height="75"/>
+        <image name="mangoPicture" width="291" height="264"/>
+        <image name="orderguidesIcon" width="80" height="90"/>
+        <image name="priceTagWhite" width="75" height="75"/>
+        <image name="sofieBeerImage" width="432" height="552"/>
+        <image name="stella" width="540" height="552"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
