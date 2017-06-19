@@ -1,0 +1,6 @@
+framework module Pods_BlueCartPrototype {
+  umbrella header "Pods-BlueCartPrototype-umbrella.h"
+
+  export *
+  module * { export * }
+}

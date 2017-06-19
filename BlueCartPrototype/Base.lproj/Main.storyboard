@@ -652,7 +652,7 @@
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="30" id="E5U-b1-duU">
                                             <size key="itemSize" width="335" height="270"/>
                                             <size key="headerReferenceSize" width="50" height="50"/>
-                                            <size key="footerReferenceSize" width="360" height="50"/>
+                                            <size key="footerReferenceSize" width="360" height="80"/>
                                             <inset key="sectionInset" minX="5" minY="0.0" maxX="5" maxY="10"/>
                                         </collectionViewFlowLayout>
                                         <cells>
@@ -1130,11 +1130,16 @@
                                             </connections>
                                         </collectionReusableView>
                                         <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="placeAllOrdersFooter" id="jXP-8g-SJz" userLabel="FooterPlaceAllOrdersButton" customClass="CheckoutCollectionReusableView" customModule="BlueCartPrototype" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="595" width="355" height="50"/>
+                                            <rect key="frame" x="0.0" y="595" width="355" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZUT-kb-G8B">
+                                                    <rect key="frame" x="-12" y="-39" width="378" height="155"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2X2-9p-F04">
-                                                    <rect key="frame" x="0.0" y="0.0" width="355" height="50"/>
+                                                    <rect key="frame" x="0.0" y="15" width="355" height="50"/>
                                                     <color key="backgroundColor" red="0.50196078430000002" green="0.81960784310000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="19"/>
                                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1144,10 +1149,10 @@
                                                     </state>
                                                 </button>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hCA-Ng-6vU">
-                                                    <rect key="frame" x="219" y="4" width="130" height="42"/>
+                                                    <rect key="frame" x="219" y="4" width="130" height="72"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3q3-kp-Nxg">
-                                                            <rect key="frame" x="8" y="8" width="114" height="26"/>
+                                                            <rect key="frame" x="8" y="8" width="114" height="56"/>
                                                             <fontDescription key="fontDescription" name="Apercu-Bold" family="Apercu" pointSize="19"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
@@ -1168,8 +1173,8 @@
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="2X2-9p-F04" firstAttribute="top" secondItem="jXP-8g-SJz" secondAttribute="top" id="0zg-xy-OV5"/>
-                                                <constraint firstAttribute="bottom" secondItem="2X2-9p-F04" secondAttribute="bottom" id="5UH-l8-TTl"/>
+                                                <constraint firstItem="2X2-9p-F04" firstAttribute="top" secondItem="jXP-8g-SJz" secondAttribute="top" constant="15" id="0zg-xy-OV5"/>
+                                                <constraint firstAttribute="bottom" secondItem="2X2-9p-F04" secondAttribute="bottom" constant="15" id="5UH-l8-TTl"/>
                                                 <constraint firstItem="2X2-9p-F04" firstAttribute="centerY" secondItem="hCA-Ng-6vU" secondAttribute="centerY" id="OjQ-0p-QNL"/>
                                                 <constraint firstItem="hCA-Ng-6vU" firstAttribute="top" secondItem="jXP-8g-SJz" secondAttribute="topMargin" constant="-4" id="USS-JX-RAr"/>
                                                 <constraint firstAttribute="trailing" secondItem="2X2-9p-F04" secondAttribute="trailing" id="WGH-TK-WiR"/>
@@ -1422,6 +1427,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iUh-Ec-EbQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="640.5" y="1076.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="DrJ-3T-c9M">
+            <objects>
+                <viewController id="nEI-iw-0dO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3S3-v1-k2H"/>
+                        <viewControllerLayoutGuide type="bottom" id="oHZ-6R-BMH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T5k-zD-wvj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cEo-60-Kjz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1231" y="1157"/>
         </scene>
     </scenes>
     <resources>
