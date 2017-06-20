@@ -27,20 +27,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		071FE007EC5F1DD452405675DE377564 /* Pods-BlueCartPrototype.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BlueCartPrototype.modulemap"; sourceTree = "<group>"; };
+		071FE007EC5F1DD452405675DE377564 /* Pods-BlueCartPrototype.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BlueCartPrototype.modulemap"; sourceTree = "<group>"; };
 		18A3E091FE6C1857FFEC8C856DE3C9A0 /* Pods-BlueCartPrototype-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BlueCartPrototype-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1FFDDA96B8CCEA7070E28200FBB7102F /* GMStepper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GMStepper-dummy.m"; sourceTree = "<group>"; };
 		29DA8200715060B7CAEDE9F4EFAA974D /* Pods-BlueCartPrototype-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BlueCartPrototype-umbrella.h"; sourceTree = "<group>"; };
 		2F46FF7A22CAD4C5363FC6B3AF93E0D6 /* Pods-BlueCartPrototype-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlueCartPrototype-acknowledgements.plist"; sourceTree = "<group>"; };
 		8728AE6D6F1B124E0FA5867F8B6D93E7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88E6EC1EE32217F08230B9E0EB8673A7 /* Pods-BlueCartPrototype-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlueCartPrototype-resources.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A3821DD8D4220739245600FD12106E27 /* Pods_BlueCartPrototype.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BlueCartPrototype.framework; path = "Pods-BlueCartPrototype.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3821DD8D4220739245600FD12106E27 /* Pods_BlueCartPrototype.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueCartPrototype.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B057D33ED24ACB5C88D664D7FBEDB220 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0A84FF85D7C1AE1D2E47EF4D086379B /* GMStepper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GMStepper.framework; path = GMStepper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0A84FF85D7C1AE1D2E47EF4D086379B /* GMStepper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GMStepper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0D47E4C276070019A344A62199C45AB /* GMStepper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GMStepper-prefix.pch"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D5571A34BEE561994B4C5311B9478A87 /* GMStepper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GMStepper.modulemap; sourceTree = "<group>"; };
+		D5571A34BEE561994B4C5311B9478A87 /* GMStepper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GMStepper.modulemap; sourceTree = "<group>"; };
 		D5F5D63726A900F00AA1C8272EAD662D /* GMStepper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GMStepper-umbrella.h"; sourceTree = "<group>"; };
 		D88295DA5469A13EA74C156A4F5EB085 /* Pods-BlueCartPrototype.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueCartPrototype.debug.xcconfig"; sourceTree = "<group>"; };
 		E083233D77C74AA1F885FBFAC5378E25 /* GMStepper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GMStepper.swift; path = GMStepper/GMStepper.swift; sourceTree = "<group>"; };
@@ -143,7 +143,6 @@
 				E083233D77C74AA1F885FBFAC5378E25 /* GMStepper.swift */,
 				548B45171C503694DFC5EC13D71C8753 /* Support Files */,
 			);
-			name = GMStepper;
 			path = GMStepper;
 			sourceTree = "<group>";
 		};

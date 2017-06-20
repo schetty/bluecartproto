@@ -40,5 +40,6 @@ class Type1CollectionViewCell: UICollectionViewCell {
         deliveryDateButton.layer.borderColor = UIColor.aluminum().cgColor
         
         }
+
     
 }

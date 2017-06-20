@@ -21,12 +21,12 @@ class CheckoutViewController: UIViewController, UICollectionViewDelegate, UIColl
     //dummy data
     let order1 = Order.init(distributorName: "Ashley's Sweet Pie", daysForDelivery: ["M", "Tu", "W", "Th", "F", "Sa", "Su"], quantity: 4, orderPrice: 340.99, isReady: true, orderMessage: "$25 Away From Order Minimum")
     
-    let order2 = Order.init(distributorName: "Jag's Tofu Factory", daysForDelivery: ["M", "Tu", "W", "Th", "F", "Sa", "Su"], quantity: 4, orderPrice: 200.01, isReady: false, orderMessage: "Must select a delivery date for this order")
+    let order2 = Order.init(distributorName: "Jag's Tofu Factory", daysForDelivery: ["M", "Tu", "W", "Th", "F", "Sa", "Su"], quantity: 4, orderPrice: 200.00
+        , isReady: false, orderMessage: "Must select a delivery date for this order")
     
 
-    
+    var price: String = ""
     var arrayOfOrders = [Order]()
-    var arrayOfBottomOrders = [Order]()
     
     
     // set up view
@@ -54,11 +54,9 @@ class CheckoutViewController: UIViewController, UICollectionViewDelegate, UIColl
         let nsnumPriceVal = NSNumber(value: arrayOfOrders[indexPath.row].orderPrice)
         let section = indexPath.section
         let distName = arrayOfOrders[indexPath.row].distributorName
-        let noOfItems = String(arrayOfOrders[indexPath.row].quantity) + "items"
-        let price = nsnumPriceVal.stringValue
+        let noOfItems = String(arrayOfOrders[indexPath.row].quantity) + " items"
+        self.price = nsnumPriceVal.stringValue
         let orderMsg = arrayOfOrders[indexPath.row].orderMessage
-        
-      
         
         
         if (section == 0 && arrayOfOrders[indexPath.row].orderMessage == "$25 Away From Order Minimum") {
@@ -94,7 +92,17 @@ class CheckoutViewController: UIViewController, UICollectionViewDelegate, UIColl
         
     }
     
+    
     // headers and footers for checkout
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
+        if (section == 0) {
+           return CGSize(width: view.frame.width, height: 0)
+        }
+        else {
+            return CGSize(width: view.frame.width, height: 80)
+        }
+    }
+    
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let section = indexPath.section
 
@@ -120,17 +128,23 @@ class CheckoutViewController: UIViewController, UICollectionViewDelegate, UIColl
             }
             
         case UICollectionElementKindSectionFooter:
-            if (section > 0) {
+            
+            if (section == 1) {
             let placeAllOrdersFooter = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: reuseIdentiferForFooter, for: indexPath) as! CheckoutCollectionReusableView
+            placeAllOrdersFooter.configureWithPrice(price: self.price)
             return placeAllOrdersFooter
-                
             }
+            
             else {
-                return UICollectionReusableView()
+                let placeAllOrdersFooter = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: reuseIdentiferForFooter, for: indexPath) as! CheckoutCollectionReusableView
+                
+                placeAllOrdersFooter.isHidden = true
+                
+                return placeAllOrdersFooter
             }
             
         default:
-            return UICollectionReusableView()
+            assert(false, "Unexpected element kind")
         }
     }
     

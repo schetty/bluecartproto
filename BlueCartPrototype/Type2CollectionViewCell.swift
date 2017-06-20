@@ -34,5 +34,6 @@ class Type2CollectionViewCell: UICollectionViewCell {
         
     }
     
+    
 
 }

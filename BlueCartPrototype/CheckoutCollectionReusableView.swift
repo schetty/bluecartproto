@@ -9,5 +9,13 @@
 import UIKit
 
 class CheckoutCollectionReusableView: UICollectionReusableView {
-        
+    
+    @IBOutlet weak var footerBackgroundView: UIView!
+    @IBOutlet weak var placeAllMyOrdersButton: UIButton!
+    @IBOutlet weak var totalPriceLabel: UILabel!
+    
+    
+    func configureWithPrice(price: String) {
+        totalPriceLabel.text = "$5,392.39"
+    }
 }
