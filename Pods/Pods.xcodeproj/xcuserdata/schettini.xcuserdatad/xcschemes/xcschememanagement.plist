@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>GMStepper.xcscheme</key>
+		<key>Pods-BlueCartPrototype.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-BlueCartPrototype.xcscheme</key>
+		<key>SCLAlertView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>6DB34ADEAC543008FDA771D13AE6F534</key>
+		<key>6D6CA3CEC40B1F15AA704FE1E23ADF11</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>72184ACF50DAA2BC38C9590E6B7B1B8A</key>
+		<key>DCE9A316AE501F6593C975F679A809B0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

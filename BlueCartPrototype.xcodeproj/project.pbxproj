@@ -28,6 +28,7 @@
 		39EE33521EF82579000D4A63 /* CheckoutHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EE33511EF82579000D4A63 /* CheckoutHeader.swift */; };
 		39EE33541EF83669000D4A63 /* Type2CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EE33531EF83669000D4A63 /* Type2CollectionViewCell.swift */; };
 		39EE33581EF88C62000D4A63 /* CheckoutWithAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EE33571EF88C62000D4A63 /* CheckoutWithAdViewController.swift */; };
+		39EE33611EF90D22000D4A63 /* CustomQuantityCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EE33601EF90D22000D4A63 /* CustomQuantityCounter.swift */; };
 		88A596CE70434044D8A6223D /* Pods_BlueCartPrototype.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0FC79CDF4D84A9DF1E46B4 /* Pods_BlueCartPrototype.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		39EE33511EF82579000D4A63 /* CheckoutHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutHeader.swift; sourceTree = "<group>"; };
 		39EE33531EF83669000D4A63 /* Type2CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Type2CollectionViewCell.swift; sourceTree = "<group>"; };
 		39EE33571EF88C62000D4A63 /* CheckoutWithAdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutWithAdViewController.swift; sourceTree = "<group>"; };
+		39EE33601EF90D22000D4A63 /* CustomQuantityCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomQuantityCounter.swift; sourceTree = "<group>"; };
 		FE6CD2AC8A11ABC9A68A326C /* Pods-BlueCartPrototype.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueCartPrototype.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueCartPrototype/Pods-BlueCartPrototype.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,6 +155,7 @@
 				399733811EF3722400489024 /* Apercu-Light.otf */,
 				399733821EF3722400489024 /* Apercu.otf */,
 				397680231EF4E04500BA184F /* Apercu-Bold.otf */,
+				39EE33601EF90D22000D4A63 /* CustomQuantityCounter.swift */,
 			);
 			name = "Style Related";
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39EE33611EF90D22000D4A63 /* CustomQuantityCounter.swift in Sources */,
 				39EE33521EF82579000D4A63 /* CheckoutHeader.swift in Sources */,
 				399733721EF361D000489024 /* ViewController.swift in Sources */,
 				3997338F1EF3E4BB00489024 /* Extensions.swift in Sources */,

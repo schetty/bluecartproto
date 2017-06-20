@@ -10,6 +10,8 @@ import UIKit
 
 class FeaturedProductViewController: UIViewController {
     
+    
+    //IB outlets
     @IBOutlet weak var footerBar: UIView!
     
     @IBOutlet weak var FourPackButton: UIButton!
@@ -19,6 +21,7 @@ class FeaturedProductViewController: UIViewController {
     @IBOutlet weak var TwentyPackButton: UIButton!
     
     @IBOutlet weak var TwentyFourPackButton: UIButton!
+    
     
     @IBAction func didTapFourPack(_ sender: Any) {
         
@@ -58,7 +61,9 @@ class FeaturedProductViewController: UIViewController {
     }
    
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.barTintColor = UIColor.white
+    }
     
     
     override func viewDidLoad() {
@@ -72,6 +77,7 @@ class FeaturedProductViewController: UIViewController {
         
         TwentyFourPackButton.layer.borderColor = UIColor.magnesium().cgColor
         
+            
         footerBar.addTopBorderWithColor(color: UIColor.lightGray(), width: 1.0)
         
         

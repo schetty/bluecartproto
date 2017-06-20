@@ -97,7 +97,7 @@ extension UIView {
 
 extension UIFont {
     func apercu(size:CGFloat) -> UIFont {
-        return UIFont(name: "Apercu", size: size)!
+        return UIFont(name: "Apercu.otf", size: size)!
     }
 }
 

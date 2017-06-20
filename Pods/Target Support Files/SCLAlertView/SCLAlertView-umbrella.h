@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double GMStepperVersionNumber;
-FOUNDATION_EXPORT const unsigned char GMStepperVersionString[];
+FOUNDATION_EXPORT double SCLAlertViewVersionNumber;
+FOUNDATION_EXPORT const unsigned char SCLAlertViewVersionString[];
 

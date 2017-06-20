@@ -7,9 +7,41 @@
 //
 
 import UIKit
+import SCLAlertView
 
 class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     
+    //alert view
+   
+    func addedToCartAlert() {
+    let appearance = SCLAlertView.SCLAppearance(
+        kTitleFont: UIFont(name: "HelveticaNeue", size: 20)!,
+        kTextFont: UIFont(name: "HelveticaNeue", size: 14)!,
+        kButtonFont: UIFont(name: "HelveticaNeue-Bold", size: 14)!,
+        showCloseButton: true
+    )
+     SCLAlertView().showTitle(
+    "Added to Cart",
+    subTitle: "Operation successfully completed.",
+    duration: 2.0,
+    completeText: "Done",
+    style: .success,
+    colorStyle: 0xA429FF,
+    colorTextButton: 0xFFFFFF
+    )
+    }
+    // functions
+    @IBAction func didPressAddToCart(_ sender: Any) {
+        redCartBoxView.isHidden = false
+        itemsInCartLabel.text = "5"
+        itemsInCartLabel.isHidden = false
+        
+        SCLAlertView().showInfo("Added to your cart", subTitle: "5 Sea Breams")
+
+    }
+    
+    
+    //dummy data
     let product1 = Product.init(productSupplier: "Atlantic Seafood", productName: "Fresh Sea Bream", skuNumber: "12345", originalPrice: 10.99, discountedPrice: 9.99, unitOfMeasure: "/LB")
     
     let product2 = Product.init(productSupplier: "Sunny Produce", productName: "Organic Mangoes", skuNumber: "OM193", originalPrice: 3.10, discountedPrice: 2.90, unitOfMeasure: "/LB")
@@ -19,7 +51,20 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     var productsArray: [Product] = []
     
     
+    
+    //outlets
     @IBOutlet weak var productTableView: UITableView!
+    
+    @IBOutlet weak var redCartBoxView: UILabel!
+    
+    @IBOutlet weak var itemsInCartLabel: UILabel!
+    
+    
+
+    // set up views
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.barTintColor = UIColor.white
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +73,6 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         productTableView.dataSource = self
         productsArray = [product1, product2, product3]
         productTableView.reloadData()
-        
         
     }
     
@@ -46,6 +90,13 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         if (indexPath.row == 0) {
             let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCellType1", for: indexPath) as! Type1Cell
             cell.configureWithCellType(product: productsArray[indexPath.row])
+            return cell
+        }
+        else if (indexPath.row == 2) {
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCellType1", for: indexPath) as! Type1Cell
+            cell.configureWithCellType(product: productsArray[indexPath.row])
+            cell.foodImageView.image = #imageLiteral(resourceName: "doughnut")
             return cell
             
         }

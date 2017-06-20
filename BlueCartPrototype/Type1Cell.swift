@@ -22,6 +22,8 @@ class Type1Cell: UITableViewCell {
     
     @IBOutlet weak var discountedPriceLabel: UILabel!
     
+    @IBOutlet weak var foodImageView: UIImageView!
+    
     @IBOutlet weak var unitOfMeasureLabel: UILabel!
     
     @IBOutlet weak var addToCartButton: UIButton!
@@ -37,6 +39,9 @@ class Type1Cell: UITableViewCell {
             addToCartButton.isHidden = false
             addedButton.isHidden = true
         }
+    }
+    
+    @IBAction func didPressAddToCart(_ sender: Any) {
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

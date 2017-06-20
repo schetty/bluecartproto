@@ -7,75 +7,80 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		098714C4F7DD93AB483735FF9E37C7A9 /* GMStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E083233D77C74AA1F885FBFAC5378E25 /* GMStepper.swift */; };
-		1F4AC5AE24DDF84EBBDC84381F9D05ED /* Pods-BlueCartPrototype-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F39CFB0B8BED9DF9CE658ABC49C8CF5E /* Pods-BlueCartPrototype-dummy.m */; };
-		33BF161112031F39DB59DE7AC62CA33D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		35AEA9A617B3FDC7D7A39E6AEF798453 /* Pods-BlueCartPrototype-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DA8200715060B7CAEDE9F4EFAA974D /* Pods-BlueCartPrototype-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6CDEB95A4B2FE8E70A1C27FB588CADA2 /* GMStepper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5F5D63726A900F00AA1C8272EAD662D /* GMStepper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF36309D5BC96F75E90B88372B98B549 /* GMStepper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFDDA96B8CCEA7070E28200FBB7102F /* GMStepper-dummy.m */; };
-		E01B7C41B9DA67DE381C2C4055786B34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		0F2381A34DA5115AE2744A4D46BF1F18 /* Pods-BlueCartPrototype-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DA8200715060B7CAEDE9F4EFAA974D /* Pods-BlueCartPrototype-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DC7825D110DAA5976718306597E6E12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		1EB1564D9FC44782B06F5A9B8EDA9E3F /* Pods-BlueCartPrototype-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F39CFB0B8BED9DF9CE658ABC49C8CF5E /* Pods-BlueCartPrototype-dummy.m */; };
+		249D978C66268BB505AFD418723E8568 /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79976012D991BBCB570D7574B6552363 /* SCLExtensions.swift */; };
+		CF521D8F1C9DBD4E87099C09A640F1A4 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D7C12624AB36573B17A345B5C28FFE /* SCLAlertView.swift */; };
+		D23065F592D2CA6E87437875C51065A4 /* SCLAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D826BF6AA60C0C13D9E2DD5CE5604CD4 /* SCLAlertView-dummy.m */; };
+		EC43A4B23E0EDEF1E302718F8D3EC583 /* SCLAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 780E9115DC64E18BDE0435285E9D4F4D /* SCLAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F200D6A426945943A90048D39F1F2BFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		04C03E846C63BCC9879DB06B0148F397 /* PBXContainerItemProxy */ = {
+		61554BE3642FF8C1624D33EE6CAEA10E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6DB34ADEAC543008FDA771D13AE6F534;
-			remoteInfo = GMStepper;
+			remoteGlobalIDString = DCE9A316AE501F6593C975F679A809B0;
+			remoteInfo = SCLAlertView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		071FE007EC5F1DD452405675DE377564 /* Pods-BlueCartPrototype.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BlueCartPrototype.modulemap"; sourceTree = "<group>"; };
+		071FE007EC5F1DD452405675DE377564 /* Pods-BlueCartPrototype.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BlueCartPrototype.modulemap"; sourceTree = "<group>"; };
 		18A3E091FE6C1857FFEC8C856DE3C9A0 /* Pods-BlueCartPrototype-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BlueCartPrototype-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1FFDDA96B8CCEA7070E28200FBB7102F /* GMStepper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GMStepper-dummy.m"; sourceTree = "<group>"; };
+		18DA4035587B16C18BA510E9CBEA4D51 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29DA8200715060B7CAEDE9F4EFAA974D /* Pods-BlueCartPrototype-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BlueCartPrototype-umbrella.h"; sourceTree = "<group>"; };
 		2F46FF7A22CAD4C5363FC6B3AF93E0D6 /* Pods-BlueCartPrototype-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlueCartPrototype-acknowledgements.plist"; sourceTree = "<group>"; };
-		8728AE6D6F1B124E0FA5867F8B6D93E7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A915754953BDE3FBECB5447865A4567 /* SCLAlertView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCLAlertView.xcconfig; sourceTree = "<group>"; };
+		53D7C12624AB36573B17A345B5C28FFE /* SCLAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = SCLAlertView/SCLAlertView.swift; sourceTree = "<group>"; };
+		6A036446468F8A358B5BB42EE12A24CD /* Pods_BlueCartPrototype.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BlueCartPrototype.framework; path = "Pods-BlueCartPrototype.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		780E9115DC64E18BDE0435285E9D4F4D /* SCLAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-umbrella.h"; sourceTree = "<group>"; };
+		79976012D991BBCB570D7574B6552363 /* SCLExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLExtensions.swift; path = SCLAlertView/SCLExtensions.swift; sourceTree = "<group>"; };
 		88E6EC1EE32217F08230B9E0EB8673A7 /* Pods-BlueCartPrototype-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlueCartPrototype-resources.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A3821DD8D4220739245600FD12106E27 /* Pods_BlueCartPrototype.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueCartPrototype.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B057D33ED24ACB5C88D664D7FBEDB220 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0A84FF85D7C1AE1D2E47EF4D086379B /* GMStepper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GMStepper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0D47E4C276070019A344A62199C45AB /* GMStepper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GMStepper-prefix.pch"; sourceTree = "<group>"; };
+		B18B724AF2C9672DC2F55E00875D92F3 /* SCLAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SCLAlertView.framework; path = SCLAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D5571A34BEE561994B4C5311B9478A87 /* GMStepper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GMStepper.modulemap; sourceTree = "<group>"; };
-		D5F5D63726A900F00AA1C8272EAD662D /* GMStepper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GMStepper-umbrella.h"; sourceTree = "<group>"; };
+		D826BF6AA60C0C13D9E2DD5CE5604CD4 /* SCLAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCLAlertView-dummy.m"; sourceTree = "<group>"; };
 		D88295DA5469A13EA74C156A4F5EB085 /* Pods-BlueCartPrototype.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueCartPrototype.debug.xcconfig"; sourceTree = "<group>"; };
-		E083233D77C74AA1F885FBFAC5378E25 /* GMStepper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GMStepper.swift; path = GMStepper/GMStepper.swift; sourceTree = "<group>"; };
+		ED09B8D16E50B7F2DAED9CF350FEF481 /* SCLAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SCLAlertView.modulemap; sourceTree = "<group>"; };
 		F079EB5F8220CF7A4D0CD05E44DD3CF6 /* Pods-BlueCartPrototype.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueCartPrototype.release.xcconfig"; sourceTree = "<group>"; };
 		F39CFB0B8BED9DF9CE658ABC49C8CF5E /* Pods-BlueCartPrototype-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BlueCartPrototype-dummy.m"; sourceTree = "<group>"; };
-		F7CEB75DC67F6C884DB1501026A0ADAF /* GMStepper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GMStepper.xcconfig; sourceTree = "<group>"; };
+		F7AF306D2AAF90D6D06E15543364D4C7 /* SCLAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-prefix.pch"; sourceTree = "<group>"; };
 		FB8F7DA3D98103F731231A8C0685BCDF /* Pods-BlueCartPrototype-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlueCartPrototype-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8B4A6345387744368D86EB57779E6EB5 /* Frameworks */ = {
+		195B9D46683F039C79B7F0C6E40AB696 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33BF161112031F39DB59DE7AC62CA33D /* Foundation.framework in Frameworks */,
+				1DC7825D110DAA5976718306597E6E12 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A555EA5A32B16143EE3AA5CFB8A6E869 /* Frameworks */ = {
+		4CAF047CDAF0D5BAEF2266A1A8D57D1E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E01B7C41B9DA67DE381C2C4055786B34 /* Foundation.framework in Frameworks */,
+				F200D6A426945943A90048D39F1F2BFC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03BEDFAF546F2B6FAE54E9D8A4A351D0 /* Pods */ = {
+		21236440975E0D8924F5FBFD0C9D1478 /* SCLAlertView */ = {
 			isa = PBXGroup;
 			children = (
-				A163A972A57537ECA51019CDBD4B8DB4 /* GMStepper */,
+				53D7C12624AB36573B17A345B5C28FFE /* SCLAlertView.swift */,
+				79976012D991BBCB570D7574B6552363 /* SCLExtensions.swift */,
+				42753F0DBF438AAF17062729B2173DED /* Support Files */,
 			);
-			name = Pods;
+			name = SCLAlertView;
+			path = SCLAlertView;
 			sourceTree = "<group>";
 		};
 		298907D60EB5B4E009F792D88573AF7D /* Pods-BlueCartPrototype */ = {
@@ -96,18 +101,18 @@
 			path = "Target Support Files/Pods-BlueCartPrototype";
 			sourceTree = "<group>";
 		};
-		548B45171C503694DFC5EC13D71C8753 /* Support Files */ = {
+		42753F0DBF438AAF17062729B2173DED /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D5571A34BEE561994B4C5311B9478A87 /* GMStepper.modulemap */,
-				F7CEB75DC67F6C884DB1501026A0ADAF /* GMStepper.xcconfig */,
-				1FFDDA96B8CCEA7070E28200FBB7102F /* GMStepper-dummy.m */,
-				C0D47E4C276070019A344A62199C45AB /* GMStepper-prefix.pch */,
-				D5F5D63726A900F00AA1C8272EAD662D /* GMStepper-umbrella.h */,
-				8728AE6D6F1B124E0FA5867F8B6D93E7 /* Info.plist */,
+				18DA4035587B16C18BA510E9CBEA4D51 /* Info.plist */,
+				ED09B8D16E50B7F2DAED9CF350FEF481 /* SCLAlertView.modulemap */,
+				4A915754953BDE3FBECB5447865A4567 /* SCLAlertView.xcconfig */,
+				D826BF6AA60C0C13D9E2DD5CE5604CD4 /* SCLAlertView-dummy.m */,
+				F7AF306D2AAF90D6D06E15543364D4C7 /* SCLAlertView-prefix.pch */,
+				780E9115DC64E18BDE0435285E9D4F4D /* SCLAlertView-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/GMStepper";
+			path = "../Target Support Files/SCLAlertView";
 			sourceTree = "<group>";
 		};
 		63D2C00AAE2DECD4AA1B0D44D16E97D5 /* Targets Support Files */ = {
@@ -131,19 +136,10 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				03BEDFAF546F2B6FAE54E9D8A4A351D0 /* Pods */,
-				FB70FBEEC1630FA3B6912855B19E9903 /* Products */,
+				CE1D7C96A3A3C0CED68FBC36DB57C4C4 /* Pods */,
+				FFC5646F43339857BD9A2B74D84C0998 /* Products */,
 				63D2C00AAE2DECD4AA1B0D44D16E97D5 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		A163A972A57537ECA51019CDBD4B8DB4 /* GMStepper */ = {
-			isa = PBXGroup;
-			children = (
-				E083233D77C74AA1F885FBFAC5378E25 /* GMStepper.swift */,
-				548B45171C503694DFC5EC13D71C8753 /* Support Files */,
-			);
-			path = GMStepper;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -154,11 +150,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FB70FBEEC1630FA3B6912855B19E9903 /* Products */ = {
+		CE1D7C96A3A3C0CED68FBC36DB57C4C4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C0A84FF85D7C1AE1D2E47EF4D086379B /* GMStepper.framework */,
-				A3821DD8D4220739245600FD12106E27 /* Pods_BlueCartPrototype.framework */,
+				21236440975E0D8924F5FBFD0C9D1478 /* SCLAlertView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FFC5646F43339857BD9A2B74D84C0998 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A036446468F8A358B5BB42EE12A24CD /* Pods_BlueCartPrototype.framework */,
+				B18B724AF2C9672DC2F55E00875D92F3 /* SCLAlertView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,58 +170,58 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		49D43A8A1CE6D05AA8E1D695E5FB4A97 /* Headers */ = {
+		B5297B822413DDCDC2C93EF7484F2A1D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35AEA9A617B3FDC7D7A39E6AEF798453 /* Pods-BlueCartPrototype-umbrella.h in Headers */,
+				EC43A4B23E0EDEF1E302718F8D3EC583 /* SCLAlertView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D03B2ABE8F1F640EEEDCD8A87104BFC /* Headers */ = {
+		ED156EF5A77760F2C642D8FDDE61B827 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CDEB95A4B2FE8E70A1C27FB588CADA2 /* GMStepper-umbrella.h in Headers */,
+				0F2381A34DA5115AE2744A4D46BF1F18 /* Pods-BlueCartPrototype-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		6DB34ADEAC543008FDA771D13AE6F534 /* GMStepper */ = {
+		6D6CA3CEC40B1F15AA704FE1E23ADF11 /* Pods-BlueCartPrototype */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E9893C6E2447721A89CADFE69A1831E9 /* Build configuration list for PBXNativeTarget "GMStepper" */;
+			buildConfigurationList = 736301234B823026CDAF1CE4E51D8739 /* Build configuration list for PBXNativeTarget "Pods-BlueCartPrototype" */;
 			buildPhases = (
-				5518B22CBCC6C7324B20386255E5C2D6 /* Sources */,
-				8B4A6345387744368D86EB57779E6EB5 /* Frameworks */,
-				5D03B2ABE8F1F640EEEDCD8A87104BFC /* Headers */,
+				4503FE3AA47D804FB7A3F9DC7F512310 /* Sources */,
+				195B9D46683F039C79B7F0C6E40AB696 /* Frameworks */,
+				ED156EF5A77760F2C642D8FDDE61B827 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = GMStepper;
-			productName = GMStepper;
-			productReference = C0A84FF85D7C1AE1D2E47EF4D086379B /* GMStepper.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		72184ACF50DAA2BC38C9590E6B7B1B8A /* Pods-BlueCartPrototype */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8C3FB69FE9C9C849401E2CDC4453FAFB /* Build configuration list for PBXNativeTarget "Pods-BlueCartPrototype" */;
-			buildPhases = (
-				7FAC9F262ABD4492144B1A3F0C9CA036 /* Sources */,
-				A555EA5A32B16143EE3AA5CFB8A6E869 /* Frameworks */,
-				49D43A8A1CE6D05AA8E1D695E5FB4A97 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B285A8F8676B0FBDFF4E7B0AE57DCAB0 /* PBXTargetDependency */,
+				8193BDC69E96A9840536992165038A41 /* PBXTargetDependency */,
 			);
 			name = "Pods-BlueCartPrototype";
 			productName = "Pods-BlueCartPrototype";
-			productReference = A3821DD8D4220739245600FD12106E27 /* Pods_BlueCartPrototype.framework */;
+			productReference = 6A036446468F8A358B5BB42EE12A24CD /* Pods_BlueCartPrototype.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DCE9A316AE501F6593C975F679A809B0 /* SCLAlertView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14D53E77B3BA3E7F189FE67EEF91A48F /* Build configuration list for PBXNativeTarget "SCLAlertView" */;
+			buildPhases = (
+				E4DCB94AD06A05B1E9C7ED30DF7D0731 /* Sources */,
+				4CAF047CDAF0D5BAEF2266A1A8D57D1E /* Frameworks */,
+				B5297B822413DDCDC2C93EF7484F2A1D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCLAlertView;
+			productName = SCLAlertView;
+			productReference = B18B724AF2C9672DC2F55E00875D92F3 /* SCLAlertView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -237,42 +241,43 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = FB70FBEEC1630FA3B6912855B19E9903 /* Products */;
+			productRefGroup = FFC5646F43339857BD9A2B74D84C0998 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6DB34ADEAC543008FDA771D13AE6F534 /* GMStepper */,
-				72184ACF50DAA2BC38C9590E6B7B1B8A /* Pods-BlueCartPrototype */,
+				6D6CA3CEC40B1F15AA704FE1E23ADF11 /* Pods-BlueCartPrototype */,
+				DCE9A316AE501F6593C975F679A809B0 /* SCLAlertView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5518B22CBCC6C7324B20386255E5C2D6 /* Sources */ = {
+		4503FE3AA47D804FB7A3F9DC7F512310 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF36309D5BC96F75E90B88372B98B549 /* GMStepper-dummy.m in Sources */,
-				098714C4F7DD93AB483735FF9E37C7A9 /* GMStepper.swift in Sources */,
+				1EB1564D9FC44782B06F5A9B8EDA9E3F /* Pods-BlueCartPrototype-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7FAC9F262ABD4492144B1A3F0C9CA036 /* Sources */ = {
+		E4DCB94AD06A05B1E9C7ED30DF7D0731 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F4AC5AE24DDF84EBBDC84381F9D05ED /* Pods-BlueCartPrototype-dummy.m in Sources */,
+				D23065F592D2CA6E87437875C51065A4 /* SCLAlertView-dummy.m in Sources */,
+				CF521D8F1C9DBD4E87099C09A640F1A4 /* SCLAlertView.swift in Sources */,
+				249D978C66268BB505AFD418723E8568 /* SCLExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B285A8F8676B0FBDFF4E7B0AE57DCAB0 /* PBXTargetDependency */ = {
+		8193BDC69E96A9840536992165038A41 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = GMStepper;
-			target = 6DB34ADEAC543008FDA771D13AE6F534 /* GMStepper */;
-			targetProxy = 04C03E846C63BCC9879DB06B0148F397 /* PBXContainerItemProxy */;
+			name = SCLAlertView;
+			target = DCE9A316AE501F6593C975F679A809B0 /* SCLAlertView */;
+			targetProxy = 61554BE3642FF8C1624D33EE6CAEA10E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -317,7 +322,7 @@
 			};
 			name = Release;
 		};
-		86336C86EF4730F4E7863B3DC5AEB1BF /* Debug */ = {
+		37E8FB272C3CCB24173E8D6A52FECE75 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D88295DA5469A13EA74C156A4F5EB085 /* Pods-BlueCartPrototype.debug.xcconfig */;
 			buildSettings = {
@@ -353,42 +358,9 @@
 			};
 			name = Debug;
 		};
-		A4679D0168CF584DD27EB1CB9B813E1C /* Debug */ = {
+		41E0A64F2A12A7088B996CF29757AEDD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7CEB75DC67F6C884DB1501026A0ADAF /* GMStepper.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/GMStepper/GMStepper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GMStepper/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GMStepper/GMStepper.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = GMStepper;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		AB3D5BE72F7F3D9B7F7611B06320DC7F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F079EB5F8220CF7A4D0CD05E44DD3CF6 /* Pods-BlueCartPrototype.release.xcconfig */;
+			baseConfigurationReference = 4A915754953BDE3FBECB5447865A4567 /* SCLAlertView.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -401,20 +373,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BlueCartPrototype/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BlueCartPrototype/Pods-BlueCartPrototype.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_BlueCartPrototype;
+				PRODUCT_NAME = SCLAlertView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -465,9 +434,42 @@
 			};
 			name = Debug;
 		};
-		D5A9EE2AF5A87B03B78ACD9C9BC968A5 /* Release */ = {
+		C7894F36110E24F8D3404EA20901E0A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7CEB75DC67F6C884DB1501026A0ADAF /* GMStepper.xcconfig */;
+			baseConfigurationReference = 4A915754953BDE3FBECB5447865A4567 /* SCLAlertView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SCLAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CE8CD3230C65060D77FDCB3FE6734642 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F079EB5F8220CF7A4D0CD05E44DD3CF6 /* Pods-BlueCartPrototype.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -480,17 +482,20 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/GMStepper/GMStepper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GMStepper/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-BlueCartPrototype/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GMStepper/GMStepper.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlueCartPrototype/Pods-BlueCartPrototype.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = GMStepper;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BlueCartPrototype;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -500,6 +505,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		14D53E77B3BA3E7F189FE67EEF91A48F /* Build configuration list for PBXNativeTarget "SCLAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7894F36110E24F8D3404EA20901E0A1 /* Debug */,
+				41E0A64F2A12A7088B996CF29757AEDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -509,20 +523,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8C3FB69FE9C9C849401E2CDC4453FAFB /* Build configuration list for PBXNativeTarget "Pods-BlueCartPrototype" */ = {
+		736301234B823026CDAF1CE4E51D8739 /* Build configuration list for PBXNativeTarget "Pods-BlueCartPrototype" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				86336C86EF4730F4E7863B3DC5AEB1BF /* Debug */,
-				AB3D5BE72F7F3D9B7F7611B06320DC7F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E9893C6E2447721A89CADFE69A1831E9 /* Build configuration list for PBXNativeTarget "GMStepper" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A4679D0168CF584DD27EB1CB9B813E1C /* Debug */,
-				D5A9EE2AF5A87B03B78ACD9C9BC968A5 /* Release */,
+				37E8FB272C3CCB24173E8D6A52FECE75 /* Debug */,
+				CE8CD3230C65060D77FDCB3FE6734642 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

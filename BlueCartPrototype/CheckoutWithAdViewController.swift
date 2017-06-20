@@ -16,6 +16,7 @@ class CheckoutWithAdViewController: UIViewController, UICollectionViewDelegate, 
     
     //IB outlets
     @IBOutlet weak var stickyFooterView: UIView!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     //dummy data
     let order1 = Order.init(distributorName: "Ashley's Sweet Pie", daysForDelivery: ["M", "Tu", "W", "Th", "F", "Sa", "Su"], quantity: 4, orderPrice: 340.99, isReady: true, orderMessage: "$25 Away From Order Minimum")
@@ -31,9 +32,16 @@ class CheckoutWithAdViewController: UIViewController, UICollectionViewDelegate, 
     
     // set up view
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.barTintColor = UIColor.white
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         arrayOfOrders = [order1, order2]
 
       stickyFooterView.layer.borderWidth = 1

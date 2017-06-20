@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '6DB34ADEAC543008FDA771D13AE6F534'
-               BlueprintName = 'GMStepper'
+               BlueprintIdentifier = 'DCE9A316AE501F6593C975F679A809B0'
+               BlueprintName = 'SCLAlertView'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'GMStepper.framework'>
+               BuildableName = 'SCLAlertView.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

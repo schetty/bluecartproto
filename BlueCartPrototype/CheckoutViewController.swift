@@ -30,6 +30,10 @@ class CheckoutViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     
     // set up view
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.barTintColor = UIColor.white
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
