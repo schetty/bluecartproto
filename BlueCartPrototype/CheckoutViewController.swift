@@ -18,12 +18,6 @@ class CheckoutViewController: UIViewController, UICollectionViewDelegate, UIColl
     let reuseIdentifierForCheckoutHeader = "checkoutOrderStatus"
     let reuseIdentiferForFooter = "placeAllOrdersFooter"
     
-    //dummy data
-    let order1 = Order.init(distributorName: "Ashley's Sweet Pie", daysForDelivery: ["M", "Tu", "W", "Th", "F", "Sa", "Su"], quantity: 4, orderPrice: 340.99, isReady: true, orderMessage: "$25 Away From Order Minimum")
-    
-    let order2 = Order.init(distributorName: "Jag's Tofu Factory", daysForDelivery: ["M", "Tu", "W", "Th", "F", "Sa", "Su"], quantity: 4, orderPrice: 200.00
-        , isReady: false, orderMessage: "Must select a delivery date for this order")
-    
 
     var price: String = ""
     var arrayOfOrders = [Order]()
@@ -37,7 +31,6 @@ class CheckoutViewController: UIViewController, UICollectionViewDelegate, UIColl
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        arrayOfOrders = [order1, order2]
     }
     
     
@@ -80,9 +73,9 @@ class CheckoutViewController: UIViewController, UICollectionViewDelegate, UIColl
             
         else if (section == 1) {
             
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Type2CollectionViewCell", for: indexPath as IndexPath) as! Type2CollectionViewCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Type2CollectionViewCell", for: indexPath as IndexPath) as! Type1CollectionViewCell
             
-            cell.configureCellWithColor(priceColor: UIColor.black, borderColor: UIColor.chicago().cgColor, priceStr: price, distributorName: distName, numberOfItems: noOfItems)
+            cell.configureCellWithColor(priceColor: UIColor.black, borderColor: UIColor.chicago().cgColor, priceStr: price, distributorName: distName, numberOfItems: noOfItems, andMessage: "")
             
             return cell
             

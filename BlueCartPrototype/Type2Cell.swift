@@ -24,30 +24,13 @@ class Type2Cell: UITableViewCell {
 
     @IBOutlet weak var chooseUnitButton: UIButton!
     
-    func configureWithCellType(product: Product) {
-        self.supplierNameLabel.text = product.productSupplier
-        self.productNameLabel.text = product.productName
-        self.SKUNumber.text = product.skuNumber
-        if (product.discountedPrice < product.originalPrice) {
-            let attributeString: NSMutableAttributedString = NSMutableAttributedString(string: "$" + String(product.originalPrice))
-            attributeString.addAttribute(NSBaselineOffsetAttributeName, value: 0, range: NSMakeRange(0, attributeString.length))
-            attributeString.addAttribute(NSStrikethroughStyleAttributeName, value: 1, range: NSMakeRange(0, attributeString.length))
-            self.pricePerUnitLabel.attributedText = attributeString
-        }
-        else {
-            self.pricePerUnitLabel.text = "$" + String(product.originalPrice)
-        }
-        self.discountedPriceLabel.text = "$" + String(product.discountedPrice)
-        self.unitOfMeasureLabel.text = product.unitOfMeasure
-        
-          chooseUnitButton.layer.borderColor = UIColor(red:0.09, green:0.53, blue:0.98, alpha:1.00).cgColor
-    }
+    @IBOutlet weak var addedButton: UIButton!
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    @IBOutlet weak var foodImageView: UIImageView!
+    
+    
 
-        // Configure the view for the selected state
-    }
+    
 
     
 }

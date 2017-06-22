@@ -17,12 +17,14 @@ class CheckoutWithAdViewController: UIViewController, UICollectionViewDelegate, 
     //IB outlets
     @IBOutlet weak var stickyFooterView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     //dummy data
-    let order1 = Order.init(distributorName: "Ashley's Sweet Pie", daysForDelivery: ["M", "Tu", "W", "Th", "F", "Sa", "Su"], quantity: 4, orderPrice: 340.99, isReady: true, orderMessage: "$25 Away From Order Minimum")
     
-    let order2 = Order.init(distributorName: "Jag's Tofu Factory", daysForDelivery: ["M", "Tu", "W", "Th", "F", "Sa", "Su"], quantity: 4, orderPrice: 200.00
-        , isReady: false, orderMessage: "Must select a delivery date for this order")
+//    let order1 = Order.init(distributorName: "Ashley's Sweet Pie", daysForDelivery: ["M", "Tu", "W", "Th", "F", "Sa", "Su"], quantity: 4, orderPrice: 340.99, isReady: true, orderMessage: "$25 Away From Order Minimum")
+//    
+//    let order2 = Order.init(distributorName: "Jag's Tofu Factory", daysForDelivery: ["M", "Tu", "W", "Th", "F", "Sa", "Su"], quantity: 4, orderPrice: 200.00
+//        , isReady: false, orderMessage: "Must select a delivery date for this order")
     
     
     var price: String = ""
@@ -42,9 +44,9 @@ class CheckoutWithAdViewController: UIViewController, UICollectionViewDelegate, 
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        arrayOfOrders = [order1, order2]
+        arrayOfOrders = Cart.shared.array
 
-      stickyFooterView.layer.borderWidth = 1
+        stickyFooterView.layer.borderWidth = 1
         stickyFooterView.layer.borderColor = UIColor.aluminum().cgColor
     }
 
@@ -73,10 +75,8 @@ class CheckoutWithAdViewController: UIViewController, UICollectionViewDelegate, 
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Type2CollectionViewCell", for: indexPath as IndexPath) as! Type2CollectionViewCell
         
-        cell.configureCellWithColor(priceColor: UIColor.black, borderColor: UIColor.aluminum().cgColor, priceStr: price, distributorName: distName, numberOfItems: noOfItems)
-        
-        cell.deliveryDateButton.titleLabel?.text = delDate
-        
+        cell.configureCellWithColor(priceColor: UIColor.black, borderColor: UIColor.aluminum().cgColor, priceStr: price, distributorName: distName, numberOfItems: noOfItems, andDeliveryDate: delDate)
+                
         return cell
     }
 }

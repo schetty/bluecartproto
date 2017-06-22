@@ -10,11 +10,15 @@ import UIKit
 
 struct Product {
     
-    let productSupplier: String
-    let productName: String
+    let productSupplier: String!
+    let productName: String!
     let skuNumber: String
-    let originalPrice: Float
-    let discountedPrice: Float
+    let originalPrice: Double
+    let discountedPrice: Double
     let unitOfMeasure: String
-
+    let itemDescription: String
+    let arrayOfQuantitiesAvail: [String]?
+    let arrayOfPricesForQuantities: [String]?
+    let itemPhoto: UIImage
+    var designatedPrice = 0.000
 }

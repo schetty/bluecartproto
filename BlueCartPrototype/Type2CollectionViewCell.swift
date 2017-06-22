@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import SCLAlertView
 
 class Type2CollectionViewCell: UICollectionViewCell {
     
+    //MARK: IB Outlets
     @IBOutlet weak var collectionViewCellView: UIView!
     @IBOutlet weak var distributorLabel: UILabel!
     @IBOutlet weak var numberOfItemsLabel: UILabel!
@@ -17,13 +19,22 @@ class Type2CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var deleteButton: UIButton!
     @IBOutlet weak var editNoteButton: UIButton!
     @IBOutlet weak var deliveryDateButton: UIButton!
+    
 
-    func configureCellWithColor(priceColor: UIColor, borderColor: CGColor, priceStr: String, distributorName: String, numberOfItems: String) {
+    
+    //MARK: Cell Functions
+    func configureCellWithColor(priceColor: UIColor, borderColor: CGColor, priceStr: String, distributorName: String, numberOfItems: String, andDeliveryDate: String) {
         
         priceLabel.textColor = priceColor
         distributorLabel.text = distributorName
         numberOfItemsLabel.text = numberOfItems
+        if (priceStr.characters.count >= 3) {
+            priceLabel.text = "$" + priceStr + ".00"
+        }
+        else {
         priceLabel.text = "$" + priceStr
+        }
+        deliveryDateButton.setTitle(andDeliveryDate,for: .normal)
         collectionViewCellView.layer.borderColor = borderColor
         collectionViewCellView.layer.borderWidth = 1.5
         collectionViewCellView.layer.cornerRadius = 5
@@ -33,7 +44,6 @@ class Type2CollectionViewCell: UICollectionViewCell {
         deliveryDateButton.layer.borderColor = UIColor(red:0.17, green:0.29, blue:0.35, alpha:1.00).cgColor
         
     }
-    
     
 
 }
